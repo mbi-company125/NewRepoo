@@ -25,6 +25,7 @@ header
 
 /* Start Navbar Side */
 /* Line After The Menu List */
+nav { height: 82px;}
 nav ul li::after
 {
     content: '';
