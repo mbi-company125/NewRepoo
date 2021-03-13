@@ -1,0 +1,442 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/** Start header Section **/
+header
+{
+    width: 100%;
+    height: 100%;
+}
+/* Logo Side */
+.logo img
+{
+    width: 150px;
+    height: 80px;
+    float: left;
+    margin-left: 50px;
+}
+
+/* Start Navbar Side */
+/* Line After The Menu List */
+nav ul li::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #008800;
+    display: block;
+    margin: auto;
+    transition: all .5s ease;
+}
+
+nav ul li:hover::after
+{
+    width: 100%;
+}
+
+.navbar-brand img
+{
+    width: 100px;
+    height: 80px;
+}
+.nav-link
+{
+    font-size: 18px;
+}
+.btn
+{
+    margin-right: 10px;
+}
+/**/
+@media (max-width: 769px)
+{
+    .nav-link
+    {
+        position: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #000;
+    }
+    .nav-link:hover
+    {
+        background: #008800;
+        color: #fff;
+        transition: all .5s ease;
+    }
+    nav ul li::after
+    {
+        display: none;
+    }
+}
+
+.carousel-item
+{
+     height: 33rem;
+     background: #777;
+     color: #fff;
+     position: relative;
+}
+.position
+{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     padding-bottom: 50px;
+}
+.overlay-image
+{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     top: 0;
+     background-position: center;
+     background-size: cover;
+     overflow: hidden;
+     opacity: 0.5;
+}
+
+/* Start Our About Us Section */
+section
+{
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.alert-secondary
+{
+    width: 100%;
+    height: 60px;
+    margin-top: 25px;
+    border-right: 10px solid #777;
+}
+
+.alert h2
+{
+    color: #008800;
+}
+
+.alert-success
+{
+    border-left: 10px solid #008800;
+    border-right: 10px solid #008800;
+    padding: 7px 0;
+    color: #008800; 
+    font-size: 18px;
+}
+.content-box
+{
+    margin-bottom: 25px;
+}
+
+/* Start Our Project cards */
+.cards
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 7px 10px #ebebeb;
+}
+
+
+.imgbox
+{
+    width: 250px;
+    height: 200px;
+}
+
+.imgbox img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.imgbox p, .btn
+{
+    margin-bottom: 25px;
+}
+/* Start Files Section */
+.number
+{
+    width: 40px;
+    height: 40px;
+    background: #008800;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.number-2
+{
+    background: #ff7349f8;
+}
+
+.number-3
+{
+    background: #ffa500;
+}
+
+.number-4
+{
+    background: darkgrey;
+}
+
+.alert-dark
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.file-name p
+{
+   color: #008080;
+   font-size: 18px;
+   margin: 5px;
+}
+
+.dow-view-share-file
+{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.dow-view-share-file a
+{
+    color: #777;
+}
+.dow-view-share-file span
+{
+    margin: 5px;
+}
+
+.down
+{
+    cursor: pointer;
+}
+
+/****** Media Responsive *****/
+@media (max-width: 769px)
+{
+    
+}
+/* Start Our News Section */
+.content h1
+{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #008080;
+    float: right;
+    font-size: 20px;
+}
+/* Start Question Section */
+.alert-light h6
+{
+    float: right;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+.alert-light h6 span
+{
+    color: #008080;
+}
+
+/* Start Our Contact Us */
+
+.form-container
+{
+    width: 100%;
+}
+.title
+{
+    margin-bottom: 50px;
+}
+.title h2
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-size: 35px;
+
+}
+.title span
+{
+    color: #008000;
+}
+/* Form Section */
+.form-container input[type="text"], input[type="email"], input[type="tel"]
+{
+    width: 45%;
+    border: none;
+    border-bottom: 2px solid #777;
+    margin: 2%;
+    outline: none;
+}
+
+.form-container input[type="submit"]
+{
+    padding: 7px 13px;
+    background-color: #008080;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+}
+.form-container textarea
+{
+    width: 98%;
+    height: 150px;
+    margin: 2%;
+    outline: none;
+    border: 2px solid #777;
+    border-radius: 5px;
+}
+
+.form-container textarea::placeholder
+{
+    position: relative;
+    margin: 5px;
+}
+/* Form Section */
+
+/* Scroll to Top Home Page */
+.btn-scroll
+{
+    position: fixed;
+    float: right;
+    right: 20px;
+    bottom: 20px;
+    background: #008800;
+    padding: 7px 12px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+a.btn-scroll:hover
+{
+    color: #fff;
+    transform: translateY(5px);
+    transition: all .5s ease;
+}
+
+/*******************/
+.location-side
+{
+    margin-right: 50px;
+}
+
+.location
+{
+    width: 100%;
+    padding: 12px 0;
+    background: #fdffff;
+    margin: 5px;
+    display: flex;
+}
+
+.location i /* For icons locations & tel & Eamil */
+{
+    margin-left: 10px;
+    color: #008080;
+    font-size: 20px;
+}
+
+.location p
+{
+    margin-left: 20px;
+}
+
+.social-media .fa /* For social media icons */
+{
+    margin-left: 10px;
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.social-media .fa:hover
+{
+    background: #c5c5c5;
+    padding: 5px;
+    border-radius: 50%;
+    transform: rotate(360deg);
+    transition: all 1s ease;
+}
+
+/*Start Our Main Statistics Section*/
+.statistics
+{
+    background: #fdffff;
+    margin-bottom: 50px;
+}
+.statistics .boxs
+{
+    width: 100%;
+    position: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.statistics .boxs .box-1 i
+{
+    color: #c5c5c5;
+    font-size: 50px;
+    margin: 20px;
+}
+.statistics .boxs .box-1 p
+{
+    color: #a0a0a0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.statistics .boxs .box-1 h6
+{
+    font-size: 16px;
+}
+
+/* Start Our footer */
+footer
+{
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+}
+
+.content-footer h5
+{
+    color: #008800;
+    margin-bottom: 25px;
+}
+
+.content-footer a
+{
+    color: #777;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.content-footer a:hover
+{
+    color: #c5c5c5;
+    text-decoration: none;
+    transition: all .5s ease;
+}
