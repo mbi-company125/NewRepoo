@@ -1,3 +1,4 @@
+/*** 
 $(function () {
 
     'use strict';
@@ -22,6 +23,28 @@ $(function () {
         
     });
 
+    // Toggle Slide 
+    $("#quet").click(function(){
+        $(".card-body").slideToggle("slow");
+      });
+
     
     
-});
+});**/
+
+// Validate Column
+function validate()
+{
+    if(document.contactform.name.value=="")
+    {
+        alert("الرجاء إدخال إسمك")
+    }
+    else if(document.contactform.tel.value=="")
+    {
+        alert("الرجاء إدخال موبايلك")
+    }
+    else if(document.contactform.email.value=="")
+    {
+        alert("الرجاء إدخال ايملك")
+    }
+}
