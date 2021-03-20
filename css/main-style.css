@@ -453,7 +453,8 @@ form input[type="text"], input[type="tel"], input[type="email"]
 
 form input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus
 {
-    border: 1px solid #0d8c60;
+    box-shadow: 1px 1px 4px #0d8c60,
+                -1px -1px 4px #0d8c60;
     transition: all .5s ease;
 }
 form textarea
@@ -471,7 +472,9 @@ form textarea:placeholder-shown
 
 form textarea:focus
 {
-    border: 1px solid #0d8c60;
+    box-shadow: 1px 1px 4px #0d8c60,
+    -1px -1px 4px #0d8c60;
+    transition: all .5s ease;
 }
 
 form input[type="submit"]

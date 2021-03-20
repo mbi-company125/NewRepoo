@@ -52,6 +52,12 @@
     outline: none;
 }
 
+.box input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus
+{
+    box-shadow: 1px 1px 4px #0d8c60,
+    -1px -1px 4px #0d8c60;
+    transition: all .5s ease;
+}
 .box input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, input[type="password"]:placeholder-shown
 {
     padding-right: 10px;

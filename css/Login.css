@@ -45,7 +45,9 @@
 }
 .box input[type = "email"]:focus,.box input[type = "password"]:focus{
     width: 280px;
-    border-color: #0d8c60;
+    box-shadow: 1px 1px 4px #0d8c60,
+    -1px -1px 4px #0d8c60;
+    transition: all 0.25s ease;
 }
 .box input[type = "submit"]{
     border: 1px solid #0d8c60;
@@ -67,6 +69,12 @@
     transition: all .5s ease;
 }
 
+.box label
+{
+    display: block;
+    text-align: right;
+    margin-right: 15px;
+}
 .box label a
 {
     font-size: 14px;
