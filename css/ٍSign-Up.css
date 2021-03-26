@@ -7,7 +7,7 @@
 
 .box{
     width: 400px;
-    height: 450px;
+    height: 500px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,6 +49,7 @@
 }
 
 .box input[type="text"],
+ input[type="tel"],
  input[type="email"],
  input[type="password"]
 {
@@ -63,12 +64,14 @@
 }
 
 .box input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
  input[type="email"]::placeholder,
  input[type="password"]::placeholder
 {
     color: #fff;
 }
 .box input[type="text"]:focus, 
+input[type="tel"]:focus,
 input[type="email"]:focus, 
 input[type="password"]:focus
 {
@@ -77,6 +80,7 @@ input[type="password"]:focus
     transition: all .5s ease;
 }
 .box input[type="text"]:placeholder-shown,
+input[type="tel"]:placeholder-shown,
  input[type="email"]:placeholder-shown,
  input[type="password"]:placeholder-shown
 {
