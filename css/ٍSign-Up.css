@@ -18,6 +18,10 @@
     border-radius: 5px;
 }
 
+.box h3
+{
+    color: #fff;
+}
 .box .icons-user i
 {
     width: 70px;
@@ -44,7 +48,9 @@
     color: #fff;
 }
 
-.box input[type="text"], input[type="email"], input[type="password"]
+.box input[type="text"],
+ input[type="email"],
+ input[type="password"]
 {
     width: 96%;
     margin: 2%;
@@ -56,17 +62,23 @@
     color: #fff;
 }
 
-.box input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder
+.box input[type="text"]::placeholder,
+ input[type="email"]::placeholder,
+ input[type="password"]::placeholder
 {
     color: #fff;
 }
-.box input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus
+.box input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus
 {
     box-shadow: 1px 1px 4px #fff,
     -1px -1px 4px #fff;
     transition: all .5s ease;
 }
-.box input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, input[type="password"]:placeholder-shown
+.box input[type="text"]:placeholder-shown,
+ input[type="email"]:placeholder-shown,
+ input[type="password"]:placeholder-shown
 {
     padding-right: 10px;
 }

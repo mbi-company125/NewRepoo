@@ -86,7 +86,7 @@ header
     display: block;
     color: #fff;
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 100000;
     display: none;
     transition: all .5s ease;
 }
@@ -216,10 +216,11 @@ a.nav-link
 
 a.login
 {
+    font-size: 16px !important;
     background: #b92025;
     margin-right: 40px;
     border-radius: 5px;
-    padding: 7px 13px;
+    padding: 5px !important;
 }
 
 a.nav-link:hover
@@ -273,7 +274,8 @@ button .navbar-toggler-icon
     {
         margin-right: 0 !important;
         margin: 5px !important;
-        font-size: 14px;
+        /* font-size: 14px; */
+        font-size: 1.7rem;
     }
   
 }
@@ -455,6 +457,7 @@ section
 {
     color: #0d8c60;
     font-weight: 900;
+    padding-right: 1.6rem;
 }
 
 .modal
@@ -551,6 +554,7 @@ section
 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
     align-items: center;
     background: #c5c5c5;
     border-radius: 5px;
@@ -656,7 +660,9 @@ section
     color: #ffffff;
 }
 
-.video-palyer-1, .video-palyer-2, .video-palyer-3
+.video-palyer-1,
+ .video-palyer-2, 
+ .video-palyer-3
 {
     width: 80%;
     position: absolute;
@@ -667,16 +673,22 @@ section
     z-index: 10000;
 }
 
-.video-palyer-1 video, .video-palyer-2 video, .video-palyer-3 video
+.video-palyer-1 video, 
+.video-palyer-2 video, 
+.video-palyer-3 video
 {
     border-radius: 5px;
 }
-.video-palyer-1 video:focus, .video-palyer-2 video:focus, .video-palyer-3 video:focus
+.video-palyer-1 video:focus, 
+.video-palyer-2 video:focus,
+ .video-palyer-3 video:focus
 {
     outline: none;
 }
 
-.video-palyer-1 i, .video-palyer-2 i, .video-palyer-3 i
+.video-palyer-1 i, 
+.video-palyer-2 i, 
+.video-palyer-3 i
 {
     color: #0d8c60;
     font-size: 30px;
@@ -822,7 +834,9 @@ form
     width: 100%;
 }
 
-form input[type="text"], input[type="tel"], input[type="email"]
+form input[type="text"], 
+input[type="tel"], 
+input[type="email"]
 {
     width: 98%;
     padding: 6px 0;
@@ -835,12 +849,16 @@ form input[type="text"], input[type="tel"], input[type="email"]
     color: #fff;
 }
 
-form input[type="text"]::placeholder, input[type="tel"]::placeholder, input[type="email"]::placeholder
+form input[type="text"]::placeholder,
+ input[type="tel"]::placeholder,
+ input[type="email"]::placeholder
 {
     color: #fff;
 }
 
-form input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus
+form input[type="text"]:focus,
+ input[type="tel"]:focus,
+ input[type="email"]:focus
 {
     box-shadow: 1px 1px 4px #fff,
                 -1px -1px 4px #fff;
