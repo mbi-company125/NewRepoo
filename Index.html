@@ -14,15 +14,32 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
    <link rel="stylesheet" type="text/css" href="css/animate.css"> 
+   <link rel="stylesheet" href="./css/numbering.css">
     <link rel="stylesheet" href="./css/main-style.css">
+
+    <!-- Loader Side -->
+    <link rel="stylesheet" href="./css/LoadingAni.css">
     <!-- cairo -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
 
     <title>Sahaa</title>
   </head>
-  <body>
-    
+  <body onload="myFunction()">
+    <!-- Loader Side -->
+    <div class="loader-wirrper" id="loader">
+      <div class="loading">
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         </div>  
+       </div>
+
     <!-- Start Header Section -->
     <header id="Home">
 
@@ -37,7 +54,46 @@
              <!-- Left Side Bar -->
              <div class="left-side">
               <li><i class="fa fa-line-chart"></i> <a href="#">مؤشرات الصحة</a> </li>
-              <li><i class="fa fa-cog"></i> <a href="#"> الأعدادات</a> </li>
+              <li><i class="fa fa-cog"></i>
+                <input type="checkbox" name="" id="check">
+                 <label for="check"> الأعدادات</label>
+                <div class="setting">
+
+                  <div class="fola">
+                  <div class="img-user"><i class="fa fa-user"></i></div>
+
+                  <div class="userName">
+                    <h6>اسم المستخدم</h6>
+                    <p>عرض الملف الشخصي</p>
+                  </div>
+                </div>
+
+                <div class="fola">
+                  <div class="Notes"><i class="fa fa-exclamation-triangle"></i>
+                  <p>تقديم ملاحظاتك</p>
+                  </div>
+                </div>
+
+                <div class="fola">
+                  <div class="support Notes"><i class="fa fa-question-circle-o"></i>
+                  <p> الدعم والمساعدة</p>
+                  </div>
+                </div>
+
+                <div class="fola">
+                  <div class="policy Notes"><i class="fa fa-building"></i>
+                  <p> سياسة الخصوصية</p>
+                  </div>
+                </div>
+
+                <div class="fola">
+                  <div class="policy Notes"><i class="fa fa-sign-out"></i>
+                  <p>تسجيل الخروج</p>
+                  </div>
+                </div>
+
+                </div>
+              </li>
               <li><i class="fa fa-search"></i><input type="search" name="search" placeholder="بحث"></li>
              </div>
 
@@ -47,41 +103,56 @@
        <!-- End Top Side -->
 
        <!-- Start Our Navbar Section -->
-       <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+       <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#Home">الرئيسية <span class="sr-only"></span></a>
+              <a class="nav-link" href="./Index.html">الرئيسية <span class="sr-only"></span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 عن الجمعية
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#History">لمحة تاريخية</a>
-                <a class="dropdown-item" href="#About">الرؤية-رسالتنا-الأهداف</a>
+                <a class="dropdown-item" href="./History.html"><i class="fa fa-book"></i> لمحة تاريخية</a>
+                <a class="dropdown-item" href="./About.html"><i class="fa fa-eye"></i> الرؤية-رسالتنا-الأهداف</a>
+                <a class="dropdown-item" href="./policy.html"><i class="fa fa-building"></i> سياسة الجمعية</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Services">الخدمات</a>
+              <a class="nav-link" href="./Services.html">الخدمات</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Project">المشاريع</a>
+              <a class="nav-link" href="./Project.html">المشاريع</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 المركز الإعلامي
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./News.html"><i class="fa fa-tv"></i> الأخبار</a>
+                <a class="dropdown-item" href="./numbering.html"><i class="fa fa-bar-chart"></i> الإحصائيات</a>
+                <a class="dropdown-item" href="./website.html"><i class="fa fa-slideshare"></i> موقع تهمك</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 مركز الملفات
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="./file.html"><i class="fa fa-file-pdf-o"></i>  ملفات ال pdf</a>
+                <a class="dropdown-item" href="./file-vedio.html"><i class="fa fa-play-circle"></i>  ملفات الفيديو</a>
+                <a class="dropdown-item" href="./file-audio.html"><i class="fa fa-play-circle-o"></i> ملفات الصوت</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Notification">المركز الإعلامي</a>
+              <a class="nav-link" href="./Quetion.html">الأسئلة الشائعة</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#file">مركز الملفات</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Quetion">الأسئلة الشائعة</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Contact">اتصل بنا</a>
+              <a class="nav-link" href="./Contact.html">اتصل بنا</a>
             </li>
           </ul>
         </div>
@@ -104,7 +175,7 @@
             <div class="container position">
                 <h1>أخر الأخبار.</h1>
                 <p>كل ما هو جديد تجدون هنا في موقعنا .</p>
-                <p><button type="button" class="btn btn-danger btn-lg">المزيد>></button></p>
+                <p><button type="button" class="btn btn-success btn-lg">المزيد>></button></p>
             </div>
           </div>
 
@@ -113,7 +184,7 @@
               <div class="container position">
                   <h1>فكرة الجمعية :-</h1>
                   <p>إدارة نشاط يتضمن منظومة متكاملة من البرامج الاجتماعية والاقتصادية موجهة لجميع فئات المجتمع وتهتم بصفة خاصة بالمرضي والمحتاجين.</p>
-                  <p><button type="button" class="btn btn-danger btn-lg">المزيد>></button></p>
+                  <p><button type="button" class="btn btn-success btn-lg">المزيد>></button></p>
               </div>
             </div>
 
@@ -122,7 +193,7 @@
               <div class="container position">
                   <h1>من نحن :-</h1>
                   <p>نحن مجموعة من الشباب  اتفقنا علي تأسيس هذه الجمعية من أجل مساعدة افراد المجتمع في جميع المجالات وتعاهدنا علي ان نخدم  الوطن والمواطن وبالتالي انفسنا بعيدا عن النواحي السياسية والعرقية والقبلية والطائفية </p>
-                  <p><button type="button" class="btn btn-danger btn-lg">المزيد>></button></p>
+                  <p><button type="button" class="btn btn-success btn-lg">المزيد>></button></p>
               </div>
             </div>
 
@@ -139,458 +210,57 @@
       </div>
     </header>
 
-     <!-- Start Our About Organization Section -->
-      <section id="History">
-        <div class="container">
-          <div class="row">
-              <div class="title wow fadeInRight delay-03s">
-                <h4><span>لمحة </span>تاريخية</h4>
-              </div>
-
-              <div class="lead text-right wow fadeInUp delay-03s">
-                ان الجمعيات التعاونية احدي الوسائل التي لا يمكن إغفالها في طريق التنمية والتقدم في الوقت الحاضر، وقد افسحت جمهورية السودان مجالاً واسعاً لتأسيسها، كما قدمت لها كل سبل الدعم والحماية القانونية المتاحة لتباشر عملها بكل حرية. 
-                تلعب الجمعيات التعاونية دور الوسيط بين المواطن والدولة وأيضا مابين الفرد وجهات اخري رسمية وشعبية فهي كفيلة بالارتقاء بشخصية الفرد عن طريق نشر المعرفة والوعي وتعبئة الجهود الفردية والجماعية لمزيد من التنمية الاجتماعية والاقتصادية وتعميق مفهوم التضامن الاجتماعي التعاوني. 
-                وقد بدأت الجمعيات التعاونية بالسودان قبل الاستقلال ولكن بصورة عفوية متصالحة مع طبيعة الانسان السوداني ومن ثم ظهرت اول جمعية بالسودان وكانت سرية لان هدفها خدمة المواطن السوداني سياسيا حينها وهي جمعية اللواء الأبيض عام 1924م وتكونت اول جمعية تعاونية بمبادرة شعبية سميت بالشركة التعاونية بالولاية الشمالية عام 1937م  ومن ثم ظهرت اول جمعية بولاية الجزيرة بصفة شعبية عام 1944م جمعية بقرية ودسلفاب لطحن الغلال واستجلاب الجرارات والمحاريث . 
-                وبعد تقديم المستر كامل مذكرة لتأسيس قانون للتعاونيات للإدارة البريطانية معلنة صدور اول قانون للتعاون بالبلاد عام 1948م وشهد ذلك العام تأسيس اول جمعية تعاونية وهي جمعية ودرملي التعاونية الزراعية ولم يقتصر الامر علي القطاع الزراعي بل شهدت المدن والقري خاصة قيام العديد من الجمعيات التعاونية الخدمية التي ساهمت في توفير طواحين الدقيق ومولدات الكهرباء والسلع الاستهلاكية منذ الاف السنين واتسع نطاقها لتشمل تجمعات العاملين وهيئات ونقابات العمال وكان لهذه الجمعيات اثرها البالغ في تطور المجتمعات وخدمة المواطنين . 
-                بدأت الحركة الرسمية التعاونية بعد تعديل قانون 1948م فقامت اول جمعية حرفية في عام 1969م بمحافظة امدرمان وسميت (اتحاد النجارين التعاوني) وكان من المفترض ان يكون اسمها (جمعية النجارين التعاونية) لان كلمة اتحاد حسب قانون التعاون تتكون من عضويته من جمعيات تعاونية وليس من أعضاء افراد ونشأ هذا الاتحاد نشأة قومية لانه يضم في عضويته مساهمين من معظم مدن السودان وجميع أعضاء هذا الاتحاد من أصحاب ورش للنجارة هدفهم الأساسي كان الحصول علي مدخلات ومواد انتاج بأسعار مناسبة بعيدة عن تجار الجملة والمستوردين .
-                وبعد ذلك اهتمت الحكومات السودانية بالحركة التعاونية ووضعت القوانين واللوائح وتم انشاء اول جسم قانوني بالوزارة كان يسمي وقتها (بالمركز القومي لتدريب التعاوني في عام 1976م) .
-                وفي عام 1982م ظهر بنك التنمية التعاوني الإسلامي السوداني لخدمة الحركة التعاونية الا انه غير اسمه وهويته في عام 2013م الي بنك النيل .
-                وبعد عشرون عام من تأسيس اول جمعية بصفة قانونية سنة 1969م تم تسجيل ثاني جمعية بصفة رسمية وهي جمعية العمال الحرفيين بامدرمان وبعدها تم تسجيل عدة جمعيات بمسميات مختلفة منها جمعية ورش الأحذية والاسر المنتجة وجمعية حرفي وعمال البناء والتشيد وحرفي السجانة وجمعية الخياطين وعليه بلغ عدد الجمعيات الحرفية المسجلة بولاية الخرطوم حتي عام 1993م عدد 11 جمعية .
-                وحسب افادة الخبير في مجال التعاون عبدالغني محمد ان الجمعيات التعاونية بولاية الخرطوم لم تلقي أي دعم من اية جهة وانما كانت بجهد ذاتي .
-                تعدلت قوانيين التعاون بالسودان في عام 1990 الي ان وصلت اخر تعديل بالعام 1999م حتي تتوافق مع الأنظمة العالمية بالرغم من ان السودان يعتبر من الأوائل في مجال التعاون ويعتبر هذا القانون الذي تستند اليه هذه الجمعية حتي الان .
-                
-              </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Our Seeing - Meesige - Goals Section -->
-      <section id="About">
-        <div class="container">
-          <div class="row">
-            <div class="title wow fadeInRight delay-03s">
-              <h4><span>الرؤية - </span>الرسالة - الأهداف</h4>
-            </div>
-
-            <div class="sub-title wow fadeInRight delay-03s">
-              <h6>الرؤية:-</h6>
-            </div>
-            <div class="lead text-right wow fadeInUp delay-03s">
-              تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية 
-              .إدارة نشاط يتضمن منظومة متكاملة من البرامج الاجتماعية والاقتصادية موجهة لجميع فئات المجتمع وتهتم بصفة خاصة بالمرضي والمحتاجين.
-            </div>
-
-            <div class="sub-title wow fadeInRight delay-03s">
-              <h6>الرسالة:-</h6>
-            </div>
-            <div class="lead text-right wow fadeInUp delay-03s">
-              لكل فرد في المجتمع ان تتعاونوا مع هذه الجمعية فهي تهدف لخدمتكم وهي منكم وإليكم. 
-                         ونتشرف بنصحكم وارشادكم لنا عبر وسائل التواصل المتاحة.
-
-            </div>
-
-            <div class="sub-title wow fadeInRight delay-03s">
-              <h6>الأهداف:-</h6>
-            </div>
-            <div class="lead text-right wow fadeInUp delay-03s">
-             <h6 class="text-right">أ/ المستهدف الأول ( المريض  ) </h6>
-             <p>1-نحن نملك المريض بطاقة شاملة للخدمات الصحية والعلاجية بكلفة مخفضة بنظام اشتراك سنوي لايتعدي كلفة استخراجها. </p>
-             <p>2-عبر البطاقة تقدم خدمات ذات جودة عالية بالمستشفيات والمراكز الصحية والعيادات الخاصة ومراكز العلاج الطبيعي والصيدليات.</p>
-             <p>3-	من الخدمات التي تقدم للمريض ( خدمة الحجز والمقابلة والاستشارات الطبية – وخدمة الإسعاف -وخدمة توصيل الادوية – وخدمة العلاجيات المخفضة – وخدمة التواصل مع الارشاديين النفسيين -وخدمة بيع المواد المستهلكة المخفضة – وخدمات اخري اجتماعية واقتصادية )</p>
-             <p></p>
-            
-             <h6>ب/ المستهدف الثاني  ( الدوائر الصحية ) </h6>
-             <p>تشمل الدوائر الصحية ( المستشفيات – المراكز الصحية والعلاحية -العيادات الخاصة – مراكز العلاج الطبيعي – مراكز وعيادات الطب البديل – مراكز المعامل والمختبرات – معامل الاشعة – عيادات النفسية – وحدات ومراكز التغذية )</p>
-             <p>1-	نحن بمثابة مسوق لكم ونعمل علي ربط المريض بكم بطريقة ذات جودة واحترافية في التعامل عبر أسس وقواعد مريحة وسهلة للطرفين </p>
-             <p>2-	توفير صفحة خاص بكم بصلاحيات خاصة بكم  داخل تطبيقنا لتمكنكم من التواصل مع مرضاكم ولغيرهم من الزائرين للتطبيق</p>
-             <p>3-	وجودكم الدائم للباحثين علي خدماتكم وربطكم بالجهات ذات العلاقة عبر منصاتنا اللكترونية .</p>
-             <p>4-	توفير مساحات ممتازة لااعلاناتكم وعروضكم داخل موقعنا وتطبيقنا اللكتروني . </p>
-             <p>5-	يمكنكم التعاقد مع قسم السلامة والامن الخاص بالجمعية لزوم تحسين جودة بيئة العمل في مؤسساتكم من حيث تمكننا بوجود فريق متدرب وذو خبرة في مجال السلامة المهنية والخدمات الأخرى مثل امن المرافق وخدمات النظافة بطريقة ترقي بالمجتمع .</p>
-             <p>6-	أي خدمات ترغبون فيها تساعدكم في تطوير مؤسساتكم ونحن وانتم شركاء نجاح لتنمية المجمتع.</p>
-
-             <h6>ج/ المستهدف الثالث  ( الشركات والمؤسسات في المجال التجاري والاقتصادي) </h6>
-             <p>1-	المساعدة في تطوير تقديم خدماتكم للجمهور من النواحي الخدمية والاقتصادية. </p>
-             <p>2-	توفير صفحة خاص بكم بصلاحيات خاصة بكم  داخل تطبيقنا لتمكنكم من التواصل مع مرضاكم ولغيرهم من الزائرين للتطبيق. </p>
-             <p>3-	المساعدة في توفير التدريبات اللازمة لموظفيكم في جميع المجالات حسب نوع نشاطكم .</p>
-             <p>4-	توفير خدمتي السلامة المهنية والخدمات الأخرى (النظافة – البحوث – ربطكم بزبائنكم وكافة الشرائح الأخرى بالمجتمع المحلي والعالمي ).</p>
-             <p>5-	خدمة التسويق اللكتروني والاعلانات الانتشارية .</p>
-             <p>6-	العمل كشركاء نجاح في تنمية المجتمع.</p>
-
-             <h6>د/ المستهدف الرابع  ( التبرعات الشعبية والرسمية) </h6>
-             <p>1-	نستقبل تبرعاتكم من اجل ايصالها لمستحقيها من مرضي ومحتاجين وذلك من خلال حساب بنكي خاص بهذه الأموال سوف يعلن عنه قريبا.</p>
-             <p>2-	تقديم فيديوهات وتقارير ترفع لكم لمعرفة الي اين ذهبت تبرعاتكم وصدقاتكم .</p>
-             <p>3-	يتم استخراج شهادات لمن يرغب منكم كالجهات الاعتبارية لتقديمها لجهات الاختصاص او اعتبارها شهادات تقديرية لكم .</p>
-             <p>4-	يمكن للمتبرع ان يسقط البند رقم (3) اذا مارغب في ذلك .</p>
-             <p>كما نامل من جميع الشركاء المستهدفين التعاون معنا لنترقي بمجتمعنا من النواحي الاجتماعية والاقتصادية</p>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Start Our Services Section-->
-      <section id="Services">
-        <div class="container">
-          <div class="row">
-            <div class="title wow fadeInRight delay-03s">
-              <h4><span>الخدمات </span>الإلكترونية</h4>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="card text-right" style="width: 18rem; margin-bottom: 20px !important;">
-                <img class="card-img-top" src="./img/2.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">أبرز الخدمات الإلكترونية</h5>
-                  <p class="card-text">هي الخدمات التي يتم تقديمها إلكترونياً عبر موقعنا.</p>
-                  <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModalCenter">
-  المزيد>>
-</button>
-
-<!-- Modal -->
-<div class="modal fade"  id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">أبرز الخدمات الإلكترونية</h5>
-      </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-         Itaque repellat minus, excepturi facilis, voluptates minima repellendus porro officia,
-          quo tempora ducimus hic eos. Iusto incidunt vitae illum delectus architecto ipsum?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 ">
-              <div class="card text-right" style="width: 18rem; margin-bottom: 20px !important;">
-                <img class="card-img-top" src="./img/2.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">خدمات الأفراد</h5>
-                  <p class="card-text">هي الخدمات التي يتم تقديمها للفرد فقط.</p>
-                  <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModalCenter">
-  المزيد>>
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">خدمات الأفراد</h5>
-      </div>
-      <div class="modal-body">
-        <h6>خدمة الاستعلام عن طلبات العلاج بالخارج</h6>
-        تمكِّن هذه الخدمة المستخدم من متابعة حالة معاملته المقدمة للإدارة العامة للهيئات الطبية والملحقيات الصحية بالخارج، من قِبَل الهيئات الطبية العامة والمحلية، أو الملحقيات الصحية بالخارج، أو الجهات الأخرى. ويشمل الاستعلام عن حالة طلب العلاج بالخارج, أو اعتماده، أو تمديده...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">خروج</button>
-      </div>
-    </div>
-  </div>
-</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="card text-right" style="width: 18rem; margin-bottom: 20px !important;">
-                <img class="card-img-top" src="./img/2.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">خدمات المنشآت</h5>
-                  <p class="card-text">هي الخدمات التي يتم تقديمها إلكترونياً للمنشئات التي تطلبها .</p>
-                  <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#exampleModalCenter">
- المزيد>>
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalCenterTitle">خدمات المنشأت</h5>
-      </div>
-      <div class="modal-body">
-        <h6>خدمات التراخيص الصحية</h6>
-        هي نظام موحد وشامل لجميع خدمات التراخيص الصحية، والتي تتميز بالتكامل التقني المباشر مع جميع الجهات الحكومية ذات العلاقة.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">خروج</button>
-      </div>
-    </div>
-  </div>
-</div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Start Our Project Section -->
-
-      <section id="Project">
+    <!-- Start Our Statistic Section -->
+    <section id="statistics">
       <div class="container">
-        <div class="row">
-          <div class="title wow fadeInRight delay-03s">
-            <h4><span>المشاريع </span>المنجزة</h4>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInRight delay-03s">
-            <div class="card" style="width: 18rem; margin-bottom: 20px;">
-              <img class="card-img-top" src="./img/4.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text text-right">ان الجمعيات التعاونية احدي الوسائل التي لا يمكن إغفالها في طريق التنمية والتقدم في الوقت الحاضر، وقد افسحت جمهورية السودان مجالاً واسعاً لتأسيسها، كما قدمت لها كل سبل الدعم والحماية القانونية المتاحة لتباشر عملها بكل حرية. </p>
+          <div class="row">
+              <!-- Title Side -->
+           <div class="title wow fadeInRight delay-03s" style="margin: 25px;"> 
+               <h4><span>الإحصائيات </span>العامة</h4>
+           </div>
+
+           <div class="col-md-3 col-sm-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+               <div class="box">
+                   <div class="icon-box"><i class="fa fa-user"></i></div>
+
+                   <div class="num-box"><label>0000</label></div>
+
+                   <div class="title-box"><p>مساهم</p></div>
+               </div>
+           </div>
+
+           <div class="col-md-3 col-sm-6 wow fadeInUp delay-06s" style="margin: 10px auto;">
+              <div class="box">
+                  <div class="icon-box"><i class="fa fa-dashboard"></i></div>
+
+                  <div class="num-box"><label>0000</label></div>
+
+                  <div class="title-box"><p>مشروع</p></div>
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInRight delay-03s">
-            <div class="card" style="width: 18rem; margin-bottom: 20px;">
-              <img class="card-img-top" src="./img/4.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text text-right">ان الجمعيات التعاونية احدي الوسائل التي لا يمكن إغفالها في طريق التنمية والتقدم في الوقت الحاضر، وقد افسحت جمهورية السودان مجالاً واسعاً لتأسيسها، كما قدمت لها كل سبل الدعم والحماية القانونية المتاحة لتباشر عملها بكل حرية. </p>
+          <div class="col-md-3 col-sm-6 wow fadeInUp delay-08s" style="margin: 10px auto;">
+              <div class="box">
+                  <div class="icon-box"><i class="fa fa-users"></i></div>
+
+                  <div class="num-box"><label>0000</label></div>
+
+                  <div class="title-box"><p>موظف</p></div>
               </div>
-            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInLeft delay-03s">
-            <div class="card" style="width: 18rem; margin-bottom: 20px;">
-              <img class="card-img-top" src="./img/4.jpg" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text text-right">ان الجمعيات التعاونية احدي الوسائل التي لا يمكن إغفالها في طريق التنمية والتقدم في الوقت الحاضر، وقد افسحت جمهورية السودان مجالاً واسعاً لتأسيسها، كما قدمت لها كل سبل الدعم والحماية القانونية المتاحة لتباشر عملها بكل حرية. </p>
+          <div class="col-md-3 col-sm-6 wow fadeInUp delay-10s" style="margin: 10px auto;">
+              <div class="box">
+                  <div class="icon-box"><i class="fa fa-money"></i></div>
+
+                  <div class="num-box"><label>0000</label></div>
+
+                  <div class="title-box"><p>حجم التعاملات</p></div>
               </div>
-            </div>
           </div>
-        </div>
+          </div>
       </div>
-    </section>
-
-    <!-- Start Our Center File Section -->
-    <section id="file">
-      <div class="container">
-        <div class="row">
-        <!-- Title Side -->
-          <div class="title wow fadeInRight delay-03s">
-            <h4><span>مركز </span>الملفات</h4>
-          </div>
-
-          <div class="col-md-12 wow fadeInRight delay-02s">
-            <div class="file-box">
-              <div class="file-name"><p><i class="fa fa-folder"></i>إسم الملف</p></div>
-
-              <div class="down-view-file">
-                <p><i class="fa fa-eye"></i><a href="#">View</a></p>
-                <p><i class="fa fa-download"></i><a href="#">Download</a></p>
-              </div>
-            </div>
-          </div>
-          <br><br><br>
-          <div class="col-md-12 wow fadeInRight delay-05s">
-            <div class="file-box">
-              <div class="file-name"><p><i class="fa fa-folder"></i>إسم الملف</p></div>
-
-              <div class="down-view-file">
-                <p><i class="fa fa-eye"></i><a href="#">View</a></p>
-                <p><i class="fa fa-download"></i><a href="#">Download</a></p>
-              </div>
-            </div>
-          </div>
-          <br><br><br>
-          <div class="col-md-12 wow fadeInRight delay-07s">
-            <div class="file-box">
-              <div class="file-name"><p><i class="fa fa-folder"></i>إسم الملف</p></div>
-
-              <div class="down-view-file">
-                <p><i class="fa fa-eye"></i><a href="#">View</a></p>
-                <p><i class="fa fa-download"></i><a href="#">Download</a></p>
-              </div>
-            </div>
-          </div>
-          <br><br><br>
-          <div class="col-md-12 wow fadeInRight delay-09s">
-            <div class="file-box">
-              <div class="file-name"><p><i class="fa fa-folder"></i>إسم الملف</p></div>
-
-              <div class="down-view-file">
-                <p><i class="fa fa-eye"></i><a href="#">View</a></p>
-                <p><i class="fa fa-download"></i><a href="#">Download</a></p>
-              </div>
-            </div>
-          </div>
-          <br><br><br>
-          <div class="col-md-12 wow fadeInRight delay-10s">
-            <div class="file-box">
-              <div class="file-name"><p><i class="fa fa-folder"></i>إسم الملف</p></div>
-
-              <div class="down-view-file">
-                <p><i class="fa fa-eye"></i><a href="#">View</a></p>
-                <p><i class="fa fa-download"></i><a href="#">Download</a></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-<!-- Start Our Quetion Section -->
-<section id="Quetion">
-  <div class="container">
-    <div class="row">
-       <!-- Title Side -->
-       <div class="title wow fadeInRight delay-03s">
-        <h4><span>الأسئلة </span>الشائعة</h4>
-      </div>
-
-      <div class="col-md-12">
-      <div class="accordion" id="accordionExample">
-        <div class="card"><!-- Card Side -->
-          <div class="card-header" id="headingOne">
-            <div class="quetion-name"> <p>السؤال الأول</p></div>
-            <h5 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-               <i class="fa fa-arrow-down"></i>
-              </button>
-            </h5>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-            <div class="card-body text-right">
-              ان الجمعيات التعاونية احدي الوسائل التي لا يمكن إغفالها في طريق التنمية والتقدم في الوقت الحاضر، وقد افسحت جمهورية السودان مجالاً واسعاً لتأسيسها، كما قدمت لها كل سبل الدعم والحماية القانونية المتاحة لتباشر عملها بكل حرية. 
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <div class="quetion-name"> <p>السؤال الثاني</p></div><!-- Quetion Name -->
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                <i class="fa fa-arrow-down"></i><!-- Icons Down -->
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-            <div class="card-body text-right">
-              ان الجمعيات التعاونية احدي الوسائل التي لا يمكن إغفالها في طريق التنمية والتقدم في الوقت الحاضر، وقد افسحت جمهورية السودان مجالاً واسعاً لتأسيسها، كما قدمت لها كل سبل الدعم والحماية القانونية المتاحة لتباشر عملها بكل حرية. 
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <div class="quetion-name"> <p>السؤال الثالث</p></div><!-- Quetion Name -->
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <i class="fa fa-arrow-down"></i><!-- Icons Down -->
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body text-right">
-              ان الجمعيات التعاونية احدي الوسائل التي لا يمكن إغفالها في طريق التنمية والتقدم في الوقت الحاضر، وقد افسحت جمهورية السودان مجالاً واسعاً لتأسيسها، كما قدمت لها كل سبل الدعم والحماية القانونية المتاحة لتباشر عملها بكل حرية. 
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" id="headingFour">
-            <div class="quetion-name"> <p>السؤال الرابع</p></div><!-- Quetion Name -->
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                <i class="fa fa-arrow-down"></i><!-- Icons Down -->
-              </button>
-            </h5>
-          </div>
-          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-            <div class="card-body text-right">
-              ان الجمعيات التعاونية احدي الوسائل التي لا يمكن إغفالها في طريق التنمية والتقدم في الوقت الحاضر، وقد افسحت جمهورية السودان مجالاً واسعاً لتأسيسها، كما قدمت لها كل سبل الدعم والحماية القانونية المتاحة لتباشر عملها بكل حرية. 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-
-<!-- Start Our Statistics Section -->
-<section id="Statistic">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-6 wow fadeInRight delay-03s">
-        <div class="Box">
-          <i class="fa fa-users"></i><br>
-          <span><li>0</li></span>
-          <p>الزوار</p>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 wow fadeInRight delay-03s">
-        <div class="Box">
-          <i class="fa fa-line-chart"></i><br>
-          <span><li>0</li></span>
-          <p>الإحصائيات</p>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 wow fadeInLeft delay-03s">
-        <div class="Box">
-          <i class="fa fa-cogs"></i><br>
-          <span><li>0</li></span>
-          <p>الخدمات</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Start Our Contact Us Section -->
-<section id="Contact">
-  <div class="container">
-    <div class="row">
-       <!-- Title Side -->
-       <div class="title wow fadeInRight delay-03s">
-        <h4><span>إتصل </span>بنا</h4>
-      </div>
-
-      <div class="col-md-8 wow fadeInRight delay-03s">
-        <form action="#" method="post" name="form1">
-          <input type="text" placeholder="أدخل إسمك" name="name" required>
-          <input type="tel" placeholder="أدخل رقمك" name="tel" required><br>
-          <input type="email" placeholder="أدخل إيميلك" name="email" required><br>
-          <textarea name="textarea" id="" cols="30" rows="10" placeholder="رسالتك"></textarea>
-          <input type="submit" value="إرسال" name="submit" onclick="validate()"> 
-        </form>
-      </div>
-
-      <div class="col-md-4 wow fadeInLeft delay-03s">
-        <form action="#" class="location-side text-right" name="form2">
-          <div class="location"><a href="#"><i class="fa fa-map"></i>السودان - الخرطوم - الصحافه</a></div><br>
-          <div class="location"><i class="fa fa-phone"></i>+249125063500</div><br>
-          <div class="location"><i class="fa fa-yahoo"></i>Sahaty.association@yandex.com</div><br>
-          <div class="social">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-whatsapp"></i>
-            <i class="fa fa-youtube"></i>
-            <i class="fa fa-google"></i>
-          </div>
-        </form>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+  </section>
 <!-- Footer Section -->
 <footer id="footer">
   <div class="container">
@@ -663,7 +333,17 @@
         </div>
       </div>
 -->
+<!-- Loader Side -->
 
+   <script>
+
+     var preloader = document.getElementById("loader");
+
+     function myFunction(){
+       preloader.style.display = 'none';
+     }
+
+   </script>
     <!-- Scrroll Button To Top Page Home -->
     <a href="#Home" class="btn-scroll"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 
@@ -673,7 +353,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     
     <!-- My Js -->
-    <script src="./js/main-script.js"></script>
+  <script src="./js/main-script.js"></script>
    <script src="js/jquery.min.js"></script>
    <script src="js/jquery.countdown.min.js"></script>
    <script src="js/wow.js"></script>

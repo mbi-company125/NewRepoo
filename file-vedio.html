@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+   <link rel="stylesheet" type="text/css" href="css/animate.css"> 
+   <link rel="stylesheet" href="./css/bootstrap.css">
+   <link rel="stylesheet" href="./css/main-style.css">
+    <!-- My Style css Local -->
+    <link rel="stylesheet" href="./css/policy.css">
+    <title> مركز الملفات</title>
+</head>
+<body onload="myFunction()">
+  
+       <!-- Loader Side -->
+       <div class="loader-wirrper" id="loader">
+        <div class="loading">
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           </div>  
+         </div>
+  
+      <!-- Start Header Section -->
+      <header id="Home">
+  
+         <!-- Start Top Side -->
+         <div class="container">
+           <div class="row">
+             <div class="col-md-12">
+               <!-- Logo Side -->
+               <div class="logo float-right">
+                 <img src="./img/logo.jpg" alt="">
+               </div>
+               <!-- Left Side Bar -->
+               <div class="left-side">
+                <li><i class="fa fa-line-chart"></i> <a href="#">مؤشرات الصحة</a> </li>
+                <li><i class="fa fa-cog"></i> <a href="#"> الأعدادات</a> </li>
+                <li><i class="fa fa-search"></i><input type="search" name="search" placeholder="بحث"></li>
+               </div>
+  
+             </div>
+           </div>
+         </div>
+         <!-- End Top Side -->
+  
+         <!-- Start Our Navbar Section -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./Index.html">الرئيسية <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  عن الجمعية
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./History.html"><i class="fa fa-book"></i> لمحة تاريخية</a>
+                  <a class="dropdown-item" href="./About.html"><i class="fa fa-eye"></i> الرؤية-رسالتنا-الأهداف</a>
+                  <a class="dropdown-item" href="./policy.html"><i class="fa fa-building"></i> سياسة الجمعية</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Services.html">الخدمات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Project.html">المشاريع</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   المركز الإعلامي
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./News.html"><i class="fa fa-tv"></i> الأخبار</a>
+                  <a class="dropdown-item" href="./numbering.html"><i class="fa fa-bar-chart"></i> الإحصائيات</a>
+                  <a class="dropdown-item" href="./website"><i class="fa fa-slideshare"></i> موقع تهمك</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   مركز الملفات
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./file.html"><i class="fa fa-file-pdf-o"></i>  ملفات ال pdf</a>
+                  <a class="dropdown-item" href="./file-vedio.html"><i class="fa fa-play-circle"></i>  ملفات الفيديو</a>
+                  <a class="dropdown-item" href="./file-audio.html"><i class="fa fa-play-circle-o"></i> ملفات الصوت</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Quetion.html">الأسئلة الشائعة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact.html">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link login" href="./Login.html">تسجيل الدخول</a>
+          </li>
+        </nav>
+      </header>
+   
+       <!-- Start Our Center File Vedio Section -->
+       <section id="file-video">
+           <div class="container">
+               <div class="row">
+                <input type="checkbox" id="check">
+                    <!-- Title Side -->
+           <div class="title wow fadeInRight delay-03s" style="margin: 25px;"> 
+            <h4><span>ملفات </span>الفيديو</h4>
+             </div>
+             
+             <div class="video-palyer-1" id="videoPlayer">
+             <video width="100%" controls autoplay id="myVideo">
+                 <source src="./img/video.mp4" type="video/mp4">
+             </video>
+             <i class="fa fa-close" onclick="stopVideo()"></i>
+             </div>
+
+             <div class="col-lg-4 col-md-6 col-sm-12" style="margin: 10px auto;">
+             <div class="file-card wow fadeInUp delay-03s">
+                 <div class="card-img">
+                     <img src="./img/undraw_videographer_nnc7.svg" width="100%" height="200px">
+                     
+                     <label for="check"> 
+                     <i class="fa fa-play"></i>
+                    </label>
+                 </div>
+
+                 <div class="title-card">
+                     <h6>شرح مختصر لمحتوي الفيديو أو عنوان الفيديو.</h6>
+                 </div>
+
+                 <div class="footer-date-card">
+                     <div class="date"><label for="#">1/1/2021</label></div>
+
+                     <div class="share-card">
+                            <i class="fa fa-share"></i>
+                     </div>
+                 </div>
+                </div>
+            </div>
+
+            <input type="checkbox" id="check-2">
+            <div class="video-palyer-2" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="./img/video2.mp4" type="video/mp4">
+                </video>
+                <i class="fa fa-close" onclick="stopVideo()"></i>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12" style="margin: 10px auto;">
+                <div class="file-card wow fadeInUp delay-03s">
+                    <div class="card-img">
+                        <img src="./img/undraw_maker_launch_crhe.svg" width="100%" height="200px">
+                        
+                        <label for="check-2"> 
+                        <i class="fa fa-play"></i>
+                       </label>
+                    </div>
+   
+                    <div class="title-card">
+                        <h6>شرح مختصر لمحتوي الفيديو أو عنوان الفيديو.</h6>
+                    </div>
+   
+                    <div class="footer-date-card">
+                        <div class="date"><label for="#">1/1/2021</label></div>
+   
+                        <div class="share-card">
+                               <i class="fa fa-share"></i>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+
+               <input type="checkbox" id="check-3">
+               <div class="video-palyer-3" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="./img/video1.mp4" type="video/mp4">
+                        
+                </video>
+                <i class="fa fa-close" onclick="stopVideo()"></i>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12" style="margin: 10px auto;"> 
+                <div class="file-card wow fadeInUp delay-03s">
+                    <div class="card-img">
+                        <img src="./img/undraw_group_video_el8e.svg" width="100%" height="200px">
+                        
+                        <label for="check-3"> 
+                        <i class="fa fa-play"></i>
+                       </label>
+                    </div>
+   
+                    <div class="title-card">
+                        <h6>شرح مختصر لمحتوي الفيديو أو عنوان الفيديو.</h6>
+                    </div>
+   
+                    <div class="footer-date-card">
+                        <div class="date"><label for="#">1/1/2021</label></div>
+   
+                        <div class="share-card">
+                               <i class="fa fa-share"></i>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+
+               <input type="checkbox" id="check-2">
+            <div class="video-palyer-2" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="./img/video2.mp4" type="video/mp4">
+                </video>
+                <i class="fa fa-close" onclick="stopVideo()"></i>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12" style="margin: 10px auto;">
+                <div class="file-card wow fadeInUp delay-03s">
+                    <div class="card-img">
+                        <img src="./img/undraw_maker_launch_crhe.svg" width="100%" height="200px">
+                        
+                        <label for="check-2"> 
+                        <i class="fa fa-play"></i>
+                       </label>
+                    </div>
+   
+                    <div class="title-card">
+                        <h6>شرح مختصر لمحتوي الفيديو أو عنوان الفيديو.</h6>
+                    </div>
+   
+                    <div class="footer-date-card">
+                        <div class="date"><label for="#">1/1/2021</label></div>
+   
+                        <div class="share-card">
+                               <i class="fa fa-share"></i>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+
+               <input type="checkbox" id="check-2">
+            <div class="video-palyer-2" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="./img/video2.mp4" type="video/mp4">
+                </video>
+                <i class="fa fa-close" onclick="stopVideo()"></i>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12" style="margin: 10px auto;">
+                <div class="file-card wow fadeInUp delay-03s">
+                    <div class="card-img">
+                        <img src="./img/undraw_maker_launch_crhe.svg" width="100%" height="200px">
+                        
+                        <label for="check-2"> 
+                        <i class="fa fa-play"></i>
+                       </label>
+                    </div>
+   
+                    <div class="title-card">
+                        <h6>شرح مختصر لمحتوي الفيديو أو عنوان الفيديو.</h6>
+                    </div>
+   
+                    <div class="footer-date-card">
+                        <div class="date"><label for="#">1/1/2021</label></div>
+   
+                        <div class="share-card">
+                               <i class="fa fa-share"></i>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+
+               <input type="checkbox" id="check-2">
+            <div class="video-palyer-2" id="videoPlayer">
+                <video width="100%" controls autoplay id="myVideo">
+                    <source src="./img/video2.mp4" type="video/mp4">
+                </video>
+                <i class="fa fa-close" onclick="stopVideo()"></i>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12" style="margin: 10px auto;">
+                  
+                  
+                <div class="file-card wow fadeInUp delay-03s">
+                    <div class="card-img">
+                        <img src="./img/undraw_maker_launch_crhe.svg" width="100%" height="200px">
+                        <label for="check-2"> 
+                        <i class="fa fa-play"></i>
+                       </label>
+                    </div>
+   
+                    <div class="title-card">
+                        <h6>شرح مختصر لمحتوي الفيديو أو عنوان الفيديو.</h6>
+                    </div>
+   
+                    <div class="footer-date-card">
+                        <div class="date"><label for="#">1/1/2021</label></div>
+   
+                        <div class="share-card">
+                               <i class="fa fa-share"></i>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+
+        </div>
+               </div>
+       </section>
+
+    <!-- Footer Section -->
+<footer id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Policey Side -->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="conected-side text-right">
+            <h6>جمعية</span> صحة التعاونية<span> متعددة<span> الأغراض.</span></h6>
+  
+            <a href="#">الخصوصية</a><br>
+            <a href="#">من نحن</a><br>
+            <a href="#">رسالتنا</a><br>
+            <a href="#"><i class="fa fa-phone"></i>تلفون: +2157846621562</a><br>
+            <a href="#"><i class="fa fa-phone"></i>فاكس: 1236</a><br>
+            <a href="#"><i class="fa fa-phone"></i>الإيميل: Sahaty.association@yandex.com</a>
+          </div>
+        </div>
+        
+        <!-- Web Site Side -->
+        <div class="col-md-4 col-sm-6 col-xs-12 line">
+          <div class="conected-side text-right">
+            <h6>مواقع <span>تهمك</span></span></h6>
+  
+            <a href="#"> https//:www.facebook.com</a><br>
+            <a href="#"> https//:www.whatsapp.com</a><br>
+            <a href="#">https//:www.youtube.com </a><br>
+            <a href="#">https//:www.inistigram.com </a><br>
+            <a href="#"> https//:www.linkedin.com</a><br>
+            <a href="#">https//:www.twataer.com </a><br>
+          </div>
+        </div>
+  
+        <!-- Contact Us Side -->
+        <div class="col-md-4 col-sm-6 col-xs-12 line">
+          <div class="conected-side text-right">
+            <h6>تواصل مع فريق <span>الدعم الفني</span></span></h6>
+  
+            <a href="#">الإدارة</a><br>
+            <a href="#"> المكتب التنفيذي</a><br>
+            <a href="#"><i class="fa fa-phone"></i>تلفون: +249125063500</a><br>
+            <a href="#"><i class="fa fa-phone"></i>تلفون: +249963042374</a><br>
+            <a href="#"><i class="fa fa-phone"></i>الإيميل: mosabboshra1998@gmail.com</a>
+          </div>
+        </div>
+  
+        
+      </div>
+      <!-- Copyright --> 
+      <div class="Copyright text-center"><p><i class="fa fa-copyright"></i>جميع الحقوق محفوظة 2021</p></div>
+      <!-- Created By With -->
+  
+      <div class="Copyright Created text-center"><p>Created By <i class="fa fa-heart"></i>With MBI & MIF </p></div>
+    </div>
+  </footer>
+    <!-- Loader Side -->
+
+   <script>
+
+    var preloader = document.getElementById("loader");
+
+    function myFunction(){
+      preloader.style.display = 'none';
+    }
+
+  </script>
+
+  <!-- Start Video Start And Stop -->
+  <script>
+
+      var videoPlayer =  document.getElementById("videoPlayer");
+      var myVideo = document.getElementById("myVideo");
+
+      function stopVideo()
+      {
+        videoPlayer.style.display = "none";
+      }
+  </script>
+   <!-- Scrroll Button To Top Page Home -->
+   <a href="#Home" class="btn-scroll"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.countdown.min.js"></script>
+   <script src="js/wow.js"></script>
+   <script src="js/custom.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="./js/scritp.js"></script>
+</body>
+</html>

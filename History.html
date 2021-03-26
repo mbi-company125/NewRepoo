@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+   <link rel="stylesheet" type="text/css" href="css/animate.css"> 
+   <link rel="stylesheet" href="./css/bootstrap.css">
+   <link rel="stylesheet" href="./css/main-style.css">
+    <!-- My Style css Local -->
+    <link rel="stylesheet" href="./css/policy.css">
+    <title>الأسئلة الشائعة</title>
+</head>
+<body onload="myFunction()">
+  
+       <!-- Loader Side -->
+       <div class="loader-wirrper" id="loader">
+        <div class="loading">
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           <div class="obj"></div>
+           </div>  
+         </div>
+  
+      <!-- Start Header Section -->
+      <header id="Home">
+  
+         <!-- Start Top Side -->
+         <div class="container">
+           <div class="row">
+             <div class="col-md-12">
+               <!-- Logo Side -->
+               <div class="logo float-right">
+                 <img src="./img/logo.jpg" alt="">
+               </div>
+               <!-- Left Side Bar -->
+               <div class="left-side">
+                <li><i class="fa fa-line-chart"></i> <a href="#">مؤشرات الصحة</a> </li>
+                <li><i class="fa fa-cog"></i> <a href="#"> الأعدادات</a> </li>
+                <li><i class="fa fa-search"></i><input type="search" name="search" placeholder="بحث"></li>
+               </div>
+  
+             </div>
+           </div>
+         </div>
+         <!-- End Top Side -->
+  
+         <!-- Start Our Navbar Section -->
+         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./Index.html">الرئيسية <span class="sr-only"></span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  عن الجمعية
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./History.html"><i class="fa fa-book"></i> لمحة تاريخية</a>
+                  <a class="dropdown-item" href="./About.html"><i class="fa fa-eye"></i> الرؤية-رسالتنا-الأهداف</a>
+                  <a class="dropdown-item" href="./policy.html"><i class="fa fa-building"></i> سياسة الجمعية</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Services.html">الخدمات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Project.html">المشاريع</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   المركز الإعلامي
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./News.html"><i class="fa fa-tv"></i> الأخبار</a>
+                  <a class="dropdown-item" href="./numbering.html"><i class="fa fa-bar-chart"></i> الإحصائيات</a>
+                  <a class="dropdown-item" href="./website"><i class="fa fa-slideshare"></i> موقع تهمك</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   مركز الملفات
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="./file.html"><i class="fa fa-file-pdf-o"></i>  ملفات ال pdf</a>
+                  <a class="dropdown-item" href="./file-vedio.html"><i class="fa fa-play-circle"></i>  ملفات الفيديو</a>
+                  <a class="dropdown-item" href="./file-audio.html"><i class="fa fa-play-circle-o"></i> ملفات الصوت</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Quetion">الأسئلة الشائعة</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contact">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link login" href="./Login.html">تسجيل الدخول</a>
+          </li>
+        </nav>
+      </header>
+   
+    <!-- Start Our About Organization Section -->
+ <section id="History">
+  <div class="container">
+    <div class="row">
+      <!-- Title Side -->
+        <div class="title wow fadeInRight delay-03s">
+          <h4><span>لمحة </span>تاريخية</h4>
+        </div>
+
+        <div class="lead text-right">
+          <p class="wow fadeInUp delay-03s">ان الجمعيات التعاونية احدي الوسائل التي لا يمكن إغفالها في طريق التنمية والتقدم في الوقت الحاضر، وقد افسحت جمهورية السودان مجالاً واسعاً لتأسيسها، كما قدمت لها كل سبل الدعم والحماية القانونية المتاحة لتباشر عملها بكل حرية. </p>
+          <p class="wow fadeInUp delay-03s">تلعب الجمعيات التعاونية دور الوسيط بين المواطن والدولة وأيضا مابين الفرد وجهات اخري رسمية وشعبية فهي كفيلة بالارتقاء بشخصية الفرد عن طريق نشر المعرفة والوعي وتعبئة الجهود الفردية والجماعية لمزيد من التنمية الاجتماعية والاقتصادية وتعميق مفهوم التضامن الاجتماعي التعاوني. </p>
+          <p class="wow fadeInUp delay-03s">وقد بدأت الجمعيات التعاونية بالسودان قبل الاستقلال ولكن بصورة عفوية متصالحة مع طبيعة الانسان السوداني ومن ثم ظهرت اول جمعية بالسودان وكانت سرية لان هدفها خدمة المواطن السوداني سياسيا حينها وهي جمعية اللواء الأبيض عام 1924م وتكونت اول جمعية تعاونية بمبادرة شعبية سميت بالشركة التعاونية بالولاية الشمالية عام 1937م  ومن ثم ظهرت اول جمعية بولاية الجزيرة بصفة شعبية عام 1944م جمعية بقرية ودسلفاب لطحن الغلال واستجلاب الجرارات والمحاريث . </p>
+          <p class="wow fadeInUp delay-03s">وبعد تقديم المستر كامل مذكرة لتأسيس قانون للتعاونيات للإدارة البريطانية معلنة صدور اول قانون للتعاون بالبلاد عام 1948م وشهد ذلك العام تأسيس اول جمعية تعاونية وهي جمعية ودرملي التعاونية الزراعية ولم يقتصر الامر علي القطاع الزراعي بل شهدت المدن والقري خاصة قيام العديد من الجمعيات التعاونية الخدمية التي ساهمت في توفير طواحين الدقيق ومولدات الكهرباء والسلع الاستهلاكية منذ الاف السنين واتسع نطاقها لتشمل تجمعات العاملين وهيئات ونقابات العمال وكان لهذه الجمعيات اثرها البالغ في تطور المجتمعات وخدمة المواطنين . </p>
+          <p class="wow fadeInUp delay-03s">بدأت الحركة الرسمية التعاونية بعد تعديل قانون 1948م فقامت اول جمعية حرفية في عام 1969م بمحافظة امدرمان وسميت (اتحاد النجارين التعاوني) وكان من المفترض ان يكون اسمها (جمعية النجارين التعاونية) لان كلمة اتحاد حسب قانون التعاون تتكون من عضويته من جمعيات تعاونية وليس من أعضاء افراد ونشأ هذا الاتحاد نشأة قومية لانه يضم في عضويته مساهمين من معظم مدن السودان وجميع أعضاء هذا الاتحاد من أصحاب ورش للنجارة هدفهم الأساسي كان الحصول علي مدخلات ومواد انتاج بأسعار مناسبة بعيدة عن تجار الجملة والمستوردين .</p>
+          <p class="wow fadeInUp delay-03s">وبعد ذلك اهتمت الحكومات السودانية بالحركة التعاونية ووضعت القوانين واللوائح وتم انشاء اول جسم قانوني بالوزارة كان يسمي وقتها (بالمركز القومي لتدريب التعاوني في عام 1976م) .</p>
+          <p class="wow fadeInUp delay-03s">وفي عام 1982م ظهر بنك التنمية التعاوني الإسلامي السوداني لخدمة الحركة التعاونية الا انه غير اسمه وهويته في عام 2013م الي بنك النيل .</p>
+          <p class="wow fadeInUp delay-03s">وبعد عشرون عام من تأسيس اول جمعية بصفة قانونية سنة 1969م تم تسجيل ثاني جمعية بصفة رسمية وهي جمعية العمال الحرفيين بامدرمان وبعدها تم تسجيل عدة جمعيات بمسميات مختلفة منها جمعية ورش الأحذية والاسر المنتجة وجمعية حرفي وعمال البناء والتشيد وحرفي السجانة وجمعية الخياطين وعليه بلغ عدد الجمعيات الحرفية المسجلة بولاية الخرطوم حتي عام 1993م عدد 11 جمعية .</p>
+          <p class="wow fadeInUp delay-03s">وحسب افادة الخبير في مجال التعاون عبدالغني محمد ان الجمعيات التعاونية بولاية الخرطوم لم تلقي أي دعم من اية جهة وانما كانت بجهد ذاتي .</p>
+          <p class="wow fadeInUp delay-03s">تعدلت قوانيين التعاون بالسودان في عام 1990 الي ان وصلت اخر تعديل بالعام 1999م حتي تتوافق مع الأنظمة العالمية بالرغم من ان السودان يعتبر من الأوائل في مجال التعاون ويعتبر هذا القانون الذي تستند اليه هذه الجمعية حتي الان .</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer Section -->
+<footer id="footer">
+    <div class="container">
+      <div class="row">
+        <!-- Policey Side -->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="conected-side text-right">
+            <h6>جمعية</span> صحة التعاونية<span> متعددة<span> الأغراض.</span></h6>
+  
+            <a href="#">الخصوصية</a><br>
+            <a href="#">من نحن</a><br>
+            <a href="#">رسالتنا</a><br>
+            <a href="#"><i class="fa fa-phone"></i>تلفون: +2157846621562</a><br>
+            <a href="#"><i class="fa fa-phone"></i>فاكس: 1236</a><br>
+            <a href="#"><i class="fa fa-phone"></i>الإيميل: Sahaty.association@yandex.com</a>
+          </div>
+        </div>
+        
+        <!-- Web Site Side -->
+        <div class="col-md-4 col-sm-6 col-xs-12 line">
+          <div class="conected-side text-right">
+            <h6>مواقع <span>تهمك</span></span></h6>
+  
+            <a href="#"> https//:www.facebook.com</a><br>
+            <a href="#"> https//:www.whatsapp.com</a><br>
+            <a href="#">https//:www.youtube.com </a><br>
+            <a href="#">https//:www.inistigram.com </a><br>
+            <a href="#"> https//:www.linkedin.com</a><br>
+            <a href="#">https//:www.twataer.com </a><br>
+          </div>
+        </div>
+  
+        <!-- Contact Us Side -->
+        <div class="col-md-4 col-sm-6 col-xs-12 line">
+          <div class="conected-side text-right">
+            <h6>تواصل مع فريق <span>الدعم الفني</span></span></h6>
+  
+            <a href="#">الإدارة</a><br>
+            <a href="#"> المكتب التنفيذي</a><br>
+            <a href="#"><i class="fa fa-phone"></i>تلفون: +249125063500</a><br>
+            <a href="#"><i class="fa fa-phone"></i>تلفون: +249963042374</a><br>
+            <a href="#"><i class="fa fa-phone"></i>الإيميل: mosabboshra1998@gmail.com</a>
+          </div>
+        </div>
+  
+        
+      </div>
+      <!-- Copyright --> 
+      <div class="Copyright text-center"><p><i class="fa fa-copyright"></i>جميع الحقوق محفوظة 2021</p></div>
+      <!-- Created By With -->
+  
+      <div class="Copyright Created text-center"><p>Created By <i class="fa fa-heart"></i>With MBI & MIF </p></div>
+    </div>
+  </footer>
+    <!-- Loader Side -->
+
+   <script>
+
+    var preloader = document.getElementById("loader");
+
+    function myFunction(){
+      preloader.style.display = 'none';
+    }
+
+  </script>
+   <!-- Scrroll Button To Top Page Home -->
+   <a href="#Home" class="btn-scroll"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+   <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.countdown.min.js"></script>
+   <script src="js/wow.js"></script>
+   <script src="js/custom.js"></script>
+    <!-- Optional JavaScript -->
+    <script src="./js/scritp.js"></script>
+</body>
+</html>

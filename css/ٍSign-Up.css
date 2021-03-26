@@ -7,13 +7,13 @@
 
 .box{
     width: 400px;
-    height: 500px;
+    height: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: none;
-    border: 1px solid #0d8c60;
+    border: 1px solid #fff;
     text-align: center;
     border-radius: 5px;
 }
@@ -23,11 +23,12 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 1px solid #0d8c60;
+    border: 1px solid #fff;
     line-height: 70px;
     font-size: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .box .back-home i
@@ -36,10 +37,11 @@
     top: 5px;
     left: 5px;
     padding: 5px;
-    border-right: 1px solid #0d8c60;
-    border-bottom: 1px solid #0d8c60;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     border-radius: 5px;
     font-size: 18px;
+    color: #fff;
 }
 
 .box input[type="text"], input[type="email"], input[type="password"]
@@ -47,15 +49,21 @@
     width: 96%;
     margin: 2%;
     padding: 7px 0;
-    border: 1px solid #0d8c60;
+    border: 1px solid #fff;
     border-radius: 5px;
     outline: none;
+    background: none;
+    color: #fff;
 }
 
+.box input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="password"]::placeholder
+{
+    color: #fff;
+}
 .box input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus
 {
-    box-shadow: 1px 1px 4px #0d8c60,
-    -1px -1px 4px #0d8c60;
+    box-shadow: 1px 1px 4px #fff,
+    -1px -1px 4px #fff;
     transition: all .5s ease;
 }
 .box input[type="text"]:placeholder-shown, input[type="email"]:placeholder-shown, input[type="password"]:placeholder-shown
@@ -63,43 +71,15 @@
     padding-right: 10px;
 }
 
-.box .Create-with i
-{
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 20px;
-    border: none;
-    border-radius: 50%;
-    margin: 10px;
-}
-
-.box .Create-with .fa-facebook
-{
-    background: #0000ff;
-    color: #fff;
-}
-
-.box .Create-with .fa-google
-{
-    background: #b92025;
-    color: #fff;
-}
-
-.box .Create-with .fa-twitter
-{
-    background: #0d8c60;
-    color: #fff;
-}
 .box input[type="submit"]
 {
-    background: #0d8c60;
+    background: #fff;
     border: none;
     outline: none;
     width: 90%;
     padding: 7px 0;
     margin: 5%;
-    color: #fff;
+    color: #333;
     border-radius: 5px;
 }
 
@@ -108,3 +88,110 @@
     transform: translateY(5px);
     transition: all .5s ease;
 }
+
+
+.welcom
+{
+    background-image: linear-gradient(#0d8c60, #008884);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+ul li
+{
+    position: absolute;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    opacity: 0;
+    background: #fff;
+}
+.square li
+{
+    top: 50vh;
+    left: 45vw;
+    animation: square 10s linear infinite;
+}
+.square li:nth-child(2)
+{
+    top: 80vh;
+    left: 10vw;
+    animation-delay: 2s;
+}
+.square li:nth-child(3)
+{
+    top: 80vh;
+    left: 85vw;
+    animation-delay: 4s;
+}
+.square li:nth-child(4)
+{
+    top: 10vh;
+    left: 70vw;
+    animation-delay: 6s;
+}
+.square li:nth-child(5)
+{
+    top: 10vh;
+    left: 10vw;
+    animation-delay: 8s;
+}
+@keyframes square
+{
+    0%
+    {
+        transform: scale(0) rotateY(0deg);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(5) rotateY(1000deg);
+        opacity: 0;
+    }
+}
+.circale li
+{
+    bottom: 0;
+    left: 15vw;
+    animation: circale 10s linear infinite;
+}
+.circale li:nth-child(2)
+{
+    left: 35vw;
+    animation-delay: 2s;
+}
+.circale li:nth-child(3)
+{
+    left: 55vw;
+    animation-delay: 6s;
+}
+.circale li:nth-child(4)
+{
+    left: 75vw;
+    animation-delay: 4s;
+}
+.circale li:nth-child(5)
+{
+    left: 90vw;
+    animation-delay: 8s;
+}
+@keyframes circale
+{
+    0%
+    {
+        transform: scale(0) rotate(0deg);
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+    100%
+    {
+        transform: scale(5) rotate(1000deg);
+        opacity: 0;
+        bottom: 90vh;
+        border-radius: 50%;
+    }
+}
+/* End Animation Background*/

@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css"> 
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- My Style css local -->
+    <link rel="stylesheet" href="./css/main-style.css">
+   <link rel="stylesheet" href="./css/News.css">
+    <title>الأخبار</title>
+  </head>
+  <body onload="myFunction()">
+
+    <!-- Loader Side -->
+    <div class="loader-wirrper" id="loader">
+      <div class="loading">
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         <div class="obj"></div>
+         </div>  
+       </div>
+  <header id="Home">
+      <!-- Start Top Side -->
+     <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Logo Side -->
+          <div class="logo float-right">
+            <img src="./img/logo.jpg" alt="">
+          </div>
+          <!-- Left Side Bar -->
+          <div class="left-side">
+           <li><i class="fa fa-line-chart"></i> <a href="#">مؤشرات الصحة</a> </li>
+           <input type="checkbox" name="" id="check">
+                 <label for="check"> الأعدادات</label>
+                <div class="setting">
+
+                  <div class="fola">
+                  <div class="img-user"><i class="fa fa-user"></i></div>
+
+                  <div class="userName">
+                    <h6>اسم المستخدم</h6>
+                    <p>عرض الملف الشخصي</p>
+                  </div>
+                </div>
+
+                <div class="fola">
+                  <div class="Notes"><i class="fa fa-exclamation-triangle"></i>
+                  <p>تقديم ملاحظاتك</p>
+                  </div>
+                </div>
+
+                <div class="fola">
+                  <div class="support Notes"><i class="fa fa-question-circle-o"></i>
+                  <p> الدعم والمساعدة</p>
+                  </div>
+                </div>
+
+                <div class="fola">
+                  <div class="policy Notes"><i class="fa fa-building"></i>
+                  <p> سياسة الخصوصية</p>
+                  </div>
+                </div>
+
+                <div class="fola">
+                  <div class="policy Notes"><i class="fa fa-sign-out"></i>
+                  <p>تسجيل الخروج</p>
+                  </div>
+                </div>
+
+                </div>
+           <li><i class="fa fa-search"></i><input type="search" name="search" placeholder="بحث"></li>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End Top Side -->
+
+    <!-- Start Our Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav">
+         <li class="nav-item active">
+           <a class="nav-link" href="./Index.html">الرئيسية <span class="sr-only"></span></a>
+         </li>
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             عن الجمعية
+           </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+             <a class="dropdown-item" href="./History.html"><i class="fa fa-book"></i> لمحة تاريخية</a>
+             <a class="dropdown-item" href="./About.html"><i class="fa fa-eye"></i> الرؤية-رسالتنا-الأهداف</a>
+             <a class="dropdown-item" href="./policy.html"><i class="fa fa-building"></i> سياسة الجمعية</a>
+           </div>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="./Services.html">الخدمات</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="./Project.html">المشاريع</a>
+         </li>
+         <li class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              المركز الإعلامي
+           </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+             <a class="dropdown-item" href="./News.html"><i class="fa fa-tv"></i> الأخبار</a>
+             <a class="dropdown-item" href="./numbering.html"><i class="fa fa-bar-chart"></i> الإحصائيات</a>
+             <a class="dropdown-item" href="./website.html"><i class="fa fa-slideshare"></i> موقع تهمك</a>
+           </div>
+         </li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             مركز الملفات
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="./file.html"><i class="fa fa-file-pdf-o"></i>  ملفات ال pdf</a>
+            <a class="dropdown-item" href="./file-vedio.html"><i class="fa fa-play-circle"></i>  ملفات الفيديو</a>
+            <a class="dropdown-item" href="./file-audio.html"><i class="fa fa-play-circle-o"></i> ملفات الصوت</a>
+          </div>
+        </li>
+         <li class="nav-item">
+           <a class="nav-link" href="./Quetion.html">الأسئلة الشائعة</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="./Contact.html">اتصل بنا</a>
+         </li>
+       </ul>
+     </div>
+     <li class="nav-item">
+       <a class="nav-link login" href="./Login.html">تسجيل الدخول</a>
+     </li>
+   </nav>
+  </header>
+
+    <section id="AllNews">
+        <div class="container">
+            <div class="row">
+                <!-- Title Side -->
+                <div class="title wow fadeInRight delay-03s">
+                     <h4><span>كل </span>الأخبار</h4>
+                </div>
+               
+                <div class="col-lg-4 col-md-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+                    <div class="card" style="width: 18rem; margin: 10px auto;">
+                        <img class="card-img-top" src="./img/undraw_News_re_6uub.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-right">عنوان الخبر 1#</h5>
+                          <p class="card-text text-right">تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية .  .</p>
+                          <a href="#" class="btn btn-scrol">المزيد >></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+                    <div class="card" style="width: 18rem; margin: 10px auto;">
+                        <img class="card-img-top" src="./img/undraw_News_re_6uub.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-right">عنوان الخبر 2#</h5>
+                          <p class="card-text text-right">تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية .  .</p>
+                          <a href="#" class="btn btn-scrol">المزيد >></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+                    <div class="card" style="width: 18rem; margin: 10px auto;">
+                        <img class="card-img-top" src="./img/undraw_News_re_6uub.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-right">عنوان الخبر 3#</h5>
+                          <p class="card-text text-right">تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية .  .</p>
+                          <a href="#" class="btn btn-scrol">المزيد >></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Our Organization News -->
+    <section id="Organization">
+        <div class="container">
+            <div class="row">
+
+                <!-- Title Side -->
+                <div class="title wow fadeInRight delay-03s">
+                     <h4><span>أخبار </span>الجمعية</h4>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+                    <div class="card" style="width: 18rem; margin: 10px auto;">
+                        <img class="card-img-top" src="./img/undraw_News_re_6uub.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-right">عنوان الخبر 1#</h5>
+                          <p class="card-text text-right">تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية .  .</p>
+                          <a href="#" class="btn btn-scrol">المزيد >></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+                    <div class="card" style="width: 18rem; margin: 10px auto;">
+                        <img class="card-img-top" src="./img/undraw_News_re_6uub.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-right">عنوان الخبر 2#</h5>
+                          <p class="card-text text-right">تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية .  .</p>
+                          <a href="#" class="btn btn-scrol">المزيد >></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+                    <div class="card" style="width: 18rem; margin: 10px auto;">
+                        <img class="card-img-top" src="./img/undraw_News_re_6uub.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-right">عنوان الخبر 3#</h5>
+                          <p class="card-text text-right">تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية .  .</p>
+                          <a href="#" class="btn btn-scrol">المزيد >></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start Mex News Section -->
+    <section id="MexNews">
+        <div class="container">
+            <div class="row">
+
+                <!-- Title Side -->
+                <div class="title wow fadeInRight delay-03s">
+                     <h4><span>الأخبار </span>المتنوعة</h4>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+                    <div class="card" style="width: 18rem; margin: 10px auto;">
+                        <img class="card-img-top" src="./img/undraw_News_re_6uub.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-right">عنوان الخبر 1#</h5>
+                          <p class="card-text text-right">تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية .  .</p>
+                          <a href="#" class="btn btn-scrol">المزيد >></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+                    <div class="card" style="width: 18rem; margin: 10px auto;">
+                        <img class="card-img-top" src="./img/undraw_News_re_6uub.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-right">عنوان الخبر 2#</h5>
+                          <p class="card-text text-right">تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية .  .</p>
+                          <a href="#" class="btn btn-scrol">المزيد >></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp delay-03s" style="margin: 10px auto;">
+                    <div class="card" style="width: 18rem; margin: 10px auto;">
+                        <img class="card-img-top" src="./img/undraw_News_re_6uub.svg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title text-right">عنوان الخبر 3#</h5>
+                          <p class="card-text text-right">تحقيق التنمية الاجتماعية والاقتصادية عبر وسائل لتحقيق الأهداف التي أنشئت من أجلها الجمعية .  .</p>
+                          <a href="#" class="btn btn-scrol">المزيد >></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+
+      <!-- Footer Section -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Policey Side -->
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="conected-side text-right">
+          <h6>جمعية</span> صحة التعاونية<span> متعددة<span> الأغراض.</span></h6>
+
+          <a href="#">الخصوصية</a><br>
+          <a href="#">من نحن</a><br>
+          <a href="#">رسالتنا</a><br>
+          <a href="#"><i class="fa fa-phone"></i>تلفون: +2157846621562</a><br>
+          <a href="#"><i class="fa fa-phone"></i>فاكس: 1236</a><br>
+          <a href="#"><i class="fa fa-phone"></i>الإيميل: Sahaty.association@yandex.com</a>
+        </div>
+      </div>
+      
+      <!-- Web Site Side -->
+      <div class="col-md-4 col-sm-6 col-xs-12 line">
+        <div class="conected-side text-right">
+          <h6>مواقع <span>تهمك</span></span></h6>
+
+          <a href="#"> https//:www.facebook.com</a><br>
+          <a href="#"> https//:www.whatsapp.com</a><br>
+          <a href="#">https//:www.youtube.com </a><br>
+          <a href="#">https//:www.inistigram.com </a><br>
+          <a href="#"> https//:www.linkedin.com</a><br>
+          <a href="#">https//:www.twataer.com </a><br>
+        </div>
+      </div>
+
+      <!-- Contact Us Side -->
+      <div class="col-md-4 col-sm-6 col-xs-12 line">
+        <div class="conected-side text-right">
+          <h6>تواصل مع فريق <span>الدعم الفني</span></span></h6>
+
+          <a href="#">الإدارة</a><br>
+          <a href="#"> المكتب التنفيذي</a><br>
+          <a href="#"><i class="fa fa-phone"></i>تلفون: +249125063500</a><br>
+          <a href="#"><i class="fa fa-phone"></i>تلفون: +249963042374</a><br>
+          <a href="#"><i class="fa fa-phone"></i>الإيميل: mosabboshra1998@gmail.com</a>
+        </div>
+      </div>
+
+      
+    </div>
+    <!-- Copyright --> 
+    <div class="Copyright text-center"><p><i class="fa fa-copyright"></i>جميع الحقوق محفوظة 2021</p></div>
+    <!-- Created By With -->
+
+    <div class="Copyright Created text-center"><p>Created By <i class="fa fa-heart"></i>With MBI & MIF </p></div>
+  </div>
+</footer>
+  <!-- Optional JavaScript -->
+  <!-- Loader Side -->
+
+ <script>
+
+  var preloader = document.getElementById("loader");
+
+  function myFunction(){
+    preloader.style.display = 'none';
+  }
+
+</script>
+ <!-- Scrroll Button To Top Page Home -->
+ <a href="#Home" class="btn-scroll"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="js/jquery.min.js"></script>
+   <script src="js/jquery.countdown.min.js"></script>
+   <script src="js/wow.js"></script>
+   <script src="js/custom.js"></script>
+  </body>
+</html>
