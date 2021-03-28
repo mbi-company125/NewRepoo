@@ -16,6 +16,23 @@
     -light: #fdffff;
     -white: #ffffff;
     -gray: #c5c5c5;
+    -background: #e84118;
+    -background: #9c88ff;
+    -background: #00a8ff;
+    -background: #ff9800;
+    -background: #7f8fa6;
+    -background: #4cd137;
+    -background: #273c75;
+    -background: #353b48;
+    -background: #0097e6;
+    -background: #8c7ae6;
+    -background: #e1b12c;
+    -background: #40739e;
+    -background: #192a56;
+    -background: #718093;
+    -background: #487eb0;
+    -background: #44bd32;
+    -background: #337ab7;
 }
 /** Start header Section **/
 header
@@ -549,6 +566,33 @@ section
     }
 }
 
+/**** Start Our New pagination Section **/
+.pagination
+{
+    position: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.page-item
+{
+    margin: 0 10px;
+}
+
+.page-item a
+{
+    background: #0d8c60 ;
+    color: #ffffff !important;
+    border-radius: 5px !important;
+}
+.page-item a:hover
+{
+    background: none;
+    color: #0d8c60 !important;
+    border: 1px solid #0d8c60;
+    border-radius: 5px;
+}
 /** Start Our File Section **/
 .file-box
 {
@@ -872,6 +916,7 @@ form textarea
     border: 1px solid #fff;
     border-radius: 5px;
     outline: none;
+    color: #fff;
 }
 
 form textarea::placeholder
@@ -891,7 +936,7 @@ form textarea:focus
     transition: all .5s ease;
 }
 
-form input[type="submit"]
+form input[type="submit"], button[type="submit"]
 {
     padding: 5px 15px;
     border: none;
@@ -901,7 +946,10 @@ form input[type="submit"]
     border-radius: 3px;
     margin: 10px;
 }
-
+form button[type="submit"] a
+{
+    color: #fff;
+}
 form input[type="submit"]:hover
 {
     transform: translateY(5px);
@@ -953,6 +1001,30 @@ form .social i:hover
     transition: all .5s ease;
 }
 
+form .social .fa-facebook:hover
+{
+    background: #337ab7;
+    transition: all .5s ease;
+}
+
+form .social .fa-whatsapp:hover
+{
+    background: #006b00;
+    transition: all .5s ease;
+}
+
+form .social .fa-youtube:hover
+{
+    background: #e21414;
+    transition: all .5s ease;
+}
+
+form .social .fa-google:hover
+{
+    background: #b92025;
+    transition: all .5s ease;
+}
+
 /*** Start Our footer Section ***/
 footer
 {
@@ -994,6 +1066,173 @@ footer .conected-side
      margin-left: 10px;
  }
 
+ /*** Start Our Cards Section ***/
+ #Cards
+ {
+     width: 100%;
+     height: 150vh;
+     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/undraw_online_cv_qy9w.svg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     overflow: hidden;
+ }
+
+ .card-request h3
+ {
+     color: #fff;
+     margin: 10px 0 30px;
+ }
+
+ .card-request label, #form-volunteer label
+ {
+     display: flex;
+     color: #fff;
+     margin: 10px 0;
+     border: 1px solid #fff;
+     border-radius: 5px;
+     width: 98%;
+     margin: 1%;
+ }
+
+ .card-request label h6, #form-volunteer label h6
+ {
+     color: #fff;
+     margin: 10px 20px 30px;
+ }
+ form input[type="radio"], form input[type="checkbox"]
+ {
+     margin: 50px 5px 10px;
+ }
+
+ form input[type="date"]
+ {
+     width: 98%;
+     margin: 1%;
+     background: none;
+     border: 1px solid #fff;
+     border-radius: 5px;
+     padding: 7px 13px;
+     color: #fff;
+     outline: none;
+ }
+ .card-request label li, #form-volunteer label li
+ {
+     margin: 40px 5px;
+ }
+
+ .Advertising
+ {
+     color: #fff;
+     border: 1px solid #0d8c60;
+     border-radius: 5px;
+ }
+
+ .header-advertising-card
+ {
+     width: 100%;
+     padding: 5px 0;
+     background: #0d8c60;
+     text-align: center;
+ }
+ .header-advertising-card i
+ {
+     color: #fff;
+     font-size: 30px;
+ }
+
+ .body-card-advertising
+ {
+     width: 100%;
+     height: 100%;
+ }
+
+ .body-card-advertising .btn-advertising
+ {
+     width: 98%;
+     margin: 1%;
+     padding: 7px 0;
+     border: 1px solid #777;
+ }
+
+ .body-card-advertising .btn-advertising a
+ {
+     color: #0d8c60;
+ }
+ .Advertising .footer-advertising
+ {
+     width: 100%;
+     background: #0d8c60;
+     text-align: center;
+ }
+
+ .body-card-advertising .footer-advertising i
+ {
+     color: #fff;
+ }
+
+ /*** start Our volunteer Section ***/
+ #volunteer
+ {
+     width: 100%;
+     height: 170vh;
+     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../img/undraw_completed_steps_yurw.svg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     overflow: hidden;
+ }
+
+ #volunteer-2
+ {
+     width: 100%;
+     height: 150vh;
+     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../img/undraw_Completed_re_cisp.svg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     overflow: hidden;
+ }
+
+ .volunter-row
+ {
+    width: 100%;
+    position: relative;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+ }
+
+ .volunter-row ul
+ {
+     color: #dddddd;
+     margin: 0 10px 30px;
+ }
+
+ .volunter-row ul li
+ {
+    padding: 0;
+ }
+
+ form small
+ {
+     width: 100%;
+     display: flex;
+     color: #dddddd;
+     margin: 20px 0;
+ }
+ #form-volunteer h3 span
+ {
+     position: absolute;
+     width: 30px;
+     height: 30px;
+     background: #0d8c60;
+     font-size: 20px;
+     line-height: 30px;
+     border-radius: 50%;
+     text-align: center;
+     margin: 5px;
+     right: -20px;
+ }
  /** Copyright & Created **/
  .Copyright
  {
