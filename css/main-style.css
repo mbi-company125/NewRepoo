@@ -7,34 +7,56 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #0d8c60;
+    border-radius: 10px;
+}
+
 /** Root Colors **/
 :root
 {
-    -green: #0d8c60;
-    -red: #b92025;
-    -blue: #008884;
-    -light: #fdffff;
-    -white: #ffffff;
-    -gray: #c5c5c5;
-    -background: #e84118;
-    -background: #9c88ff;
-    -background: #00a8ff;
-    -background: #ff9800;
-    -background: #7f8fa6;
-    -background: #4cd137;
-    -background: #273c75;
-    -background: #353b48;
-    -background: #0097e6;
-    -background: #8c7ae6;
-    -background: #e1b12c;
-    -background: #40739e;
-    -background: #192a56;
-    -background: #718093;
-    -background: #487eb0;
-    -background: #44bd32;
-    -background: #337ab7;
+    --min-bg-color: #0d8c60;
+    --min-text-color: #b92025;
+    --container-width: 90%;
+    --setting-bg-color: #1c1e21;
+    --setting-hover-color: #333;
+    --header-text-color: #008884;
+    --footer-bg-color: #252525;
+    --footer-title-color: #0d8c60;
+    --light: #fdffff;
+    --white: #ffffff;
+    --gray: #c5c5c5;
+    --background: #e84118;
+    --background: #9c88ff;
+    --background: #00a8ff;
+    --background: #ff9800;
+    --background: #7f8fa6;
+    --background: #4cd137;
+    --background: #273c75;
+    --background: #353b48;
+    --background: #0097e6;
+    --background: #8c7ae6;
+    --background: #e1b12c;
+    --background: #40739e;
+    --background: #192a56;
+    --background: #718093;
+    --background: #487eb0;
+    --background: #44bd32;
+    --background: #337ab7;
 }
 /** Start header Section **/
+body
+{
+    background: #f8f9fa;
+}
+
 header
 {
     width: 100%;
@@ -59,13 +81,13 @@ header
 .left-side li i
 {
     font-size: 25px;
-    color: #008884;
+    color: var(--header-text-color);
     margin: 10px;
 }
 
 .left-side li a
 {
-    color: #0d8c60;
+    color: var(--header-text-color);
     font-size: 20px;
     margin-left: 20px;
 }
@@ -73,8 +95,8 @@ header
 .left-side li a:hover
 {
     text-decoration: none;
-    border-bottom: 1px solid #0d8c60;
-    color: #0d8c60;
+    border-bottom: 1px solid var(--header-text-color);
+    color: var(--header-text-color);
     transition: all .5s ease;
 }
 
@@ -83,7 +105,7 @@ header
     padding: 5px 0;
     width: 200px;
     outline: none;
-    border: 1px solid #0d8c60;
+    border: 1px solid var(--header-text-color);
     border-radius: 5px;
 }
 
@@ -96,7 +118,7 @@ header
 {
     width: 300px;
     height: 400px;
-    background: #252525;
+    background: var(--setting-bg-color);
     position: absolute;
     top: 80px;
     left: 50px;
@@ -110,14 +132,14 @@ header
 
 .left-side label
 {
-    color: #0d8c60;
+    color: var(--header-text-color);
     font-size: 20px;
     cursor: pointer;
 }
 
 .left-side label:hover
 {
-    border-bottom: 1px solid #0d8c60;
+    border-bottom: 1px solid var(--header-text-color);
     transition: all .5s ease;
 }
 
@@ -153,13 +175,13 @@ header
 
 .left-side .Notes i
 {
-    color: #008884;
+    color: var(--header-text-color);
     font-size: 30px;
     margin-right: 20px;
 }
 .left-side .Notes:hover
 {
-    background: #333;
+    background: var(--setting-hover-color);
     transition: all .5s ease;
 }
 
@@ -171,7 +193,7 @@ header
 {
     width: 70px;
     height: 70px;
-    background: #333;
+    background: var(--setting-hover-color);
     border-radius: 50%;
     margin: 20px;
 }
@@ -180,7 +202,7 @@ header
 {
     line-height: 70px;
     font-size: 40px;
-    color: #0d8c60;
+    color: var(--min-bg-color);
 }
 
 .setting .userName
@@ -221,7 +243,7 @@ header
 /* Start Navbar Side */
 .navbar
 {
-    background: #0d8c60 !important;
+    background: var(--min-bg-color) !important;
 }
 a.nav-link
 {
@@ -234,7 +256,7 @@ a.nav-link
 a.login
 {
     font-size: 16px !important;
-    background: #b92025;
+    background: var(--min-text-color);
     margin-right: 40px;
     border-radius: 5px;
     padding: 5px !important;
@@ -242,7 +264,7 @@ a.login
 
 a.nav-link:hover
 {
-    color: #0d8c60 !important;
+    color: var(--header-text-color) !important;
     transition: all .5s ease !important;
     background: #ffffff !important;
     border-radius: 5px;
@@ -250,7 +272,7 @@ a.nav-link:hover
 
 a.nav-link:focus
 {
-    color: #0d8c60 !important;
+    color: var(--header-text-color) !important;
     transition: all .5s ease !important;
     background: #ffffff !important;
     border-radius: 5px;
@@ -332,7 +354,7 @@ button .navbar-toggler-icon
      text-align: center;
 }
 
-.position .btn-success
+.position .btn-danger
 {
    padding: 5px 10px;
 }
@@ -369,7 +391,7 @@ button .navbar-toggler-icon
     {
         font-size: 12px;
     }
-    .btn-success
+    .btn-danger
     {
         padding: 4px 6px;
         font-size: 16px;
@@ -382,7 +404,7 @@ button .navbar-toggler-icon
     float: right;
     right: 20px;
     bottom: 20px;
-    background: #0d8c60;
+    background: var(--min-text-color);
     padding: 7px 12px;
     color: #fff;
     border-radius: 5px;
@@ -406,7 +428,7 @@ section
 .title
 {
     width: 100%;
-    border-right: 5px solid #0d8c60;
+    border-right: 5px solid var(--min-text-color);
     margin-bottom: 30px;
 }
 
@@ -421,7 +443,7 @@ section
     content: '';
     width: 10px;
     height: 10px;
-    background: #0d8c60;
+    background: var(--min-text-color);
     display: block;
     position: absolute;
     transform: rotate(45deg);
@@ -430,7 +452,7 @@ section
 }
 .title h4 span
 {
-    color: #0d8c60;
+    color: var(--min-text-color);
 }
 
 .lead
@@ -440,7 +462,7 @@ section
 
 .sub-title h6
 {
-    color: #0d8c60;
+    color: var(--min-text-color);
     font-size: 25px;
 }
 
@@ -472,9 +494,14 @@ section
 
 .modal-title
 {
-    color: #0d8c60;
+    color: var(--min-text-color);
     font-weight: 900;
     padding-right: 1.6rem;
+}
+
+.card-title
+{
+    color: var(--min-bg-color);
 }
 
 .modal
@@ -499,12 +526,13 @@ section
    width: 90px;
    height: 40px;
    text-align: center;
+   color: var(--footer-bg-color);
 }
 
 .btn-scrol
 {
     padding: 7px 13px;
-    border:  1px solid #0d8c60;
+    border:  1px solid var(--min-text-color);
     position: relative;
     z-index: 1000;
     text-align: left;
@@ -515,7 +543,7 @@ section
     width: 5px;
     height: 38px;
     overflow: hidden;
-    background: #0d8c60;
+    background: var(--min-text-color);
     display: block;
     right: 0;
     top: 0;
@@ -526,22 +554,20 @@ section
 
 .btn a
 {
-    color: #0d8c60;
+    color: #333;
     font-size: 16px;
 }
 
 .btn a:hover
 {
-    color: #ffffff;
+   
     border: 10px;
     text-decoration: none;
 }
-
 .btn-scrol:hover::before
 {
     width: 88px;
     transition-delay: 1s;
-    color: #ffffff !important;
     transition: all .5s ease;
 }
 
@@ -582,15 +608,15 @@ section
 
 .page-item a
 {
-    background: #0d8c60 ;
+    background: var(--min-bg-color);
     color: #ffffff !important;
     border-radius: 5px !important;
 }
 .page-item a:hover
 {
     background: none;
-    color: #0d8c60 !important;
-    border: 1px solid #0d8c60;
+    color: var(--min-bg-color) !important;
+    border: 1px solid var(--min-bg-color);
     border-radius: 5px;
 }
 /** Start Our File Section **/
@@ -663,7 +689,7 @@ section
 .card-img i
 {
     font-size: 70px;
-    color: #0d8c60;
+    color: var(--min-bg-color);
     position: absolute;
     top: 40%;
     left: 50%;
@@ -684,8 +710,8 @@ section
 }
 .footer-date-card .date
 {
-    border-top: 1px solid #0d8c60;
-    border-left: 1px solid #0d8c60;
+    border-top: 1px solid var(--footer-bg-color);
+    border-left: 1px solid var(--footer-bg-color);
     border-radius: 5px;
     padding: 1px;
     font-size: 12px;
@@ -698,7 +724,7 @@ section
 .share-card i
 {
     margin: auto 5px;
-    background: #0d8c60;
+    background: var(--min-text-color);
     border-radius: 10px;
     padding: 5px;
     color: #ffffff;
@@ -734,7 +760,7 @@ section
 .video-palyer-2 i, 
 .video-palyer-3 i
 {
-    color: #0d8c60;
+    color: var(--min-text-color);
     font-size: 30px;
     position: absolute;
     top: 10px;
@@ -817,7 +843,7 @@ section
 
 .media-icon i:hover
 {
-   color: #0d8c60;
+   color: var(--min-text-color);
     transition: all .5s ease;
 }
 
@@ -840,8 +866,6 @@ section
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .card-header h5
@@ -850,7 +874,7 @@ section
 }
 .quetion-name p
 {
-    color: #0d8c60;
+    color: var(--min-bg-color);
     font-weight: 500;
 }
 
@@ -860,7 +884,7 @@ section
 }
 .btn-link i
 {
-    color: #0d8c60;
+    color: var(--min-bg-color);
 }
 
 /** Start Our Contact Us **/
@@ -940,7 +964,7 @@ form input[type="submit"], button[type="submit"]
 {
     padding: 5px 15px;
     border: none;
-    background: #0d8c60;
+    background: var(--min-text-color);
     color: #ffffff;
     outline: none;
     border-radius: 3px;
@@ -982,14 +1006,14 @@ form .location a:hover
 form .location i
 {
     margin-left: 10px;
-    color: #0d8c60;
+    color: var(--min-bg-color);
 }
 
 form .social i
 {
     color: #ffffff;
     padding: 7px 12px;
-    background: #0d8c60;
+    background: var(--min-bg-color);
     border-radius: 5px;
     margin: 5px;
     cursor: pointer;
@@ -1031,7 +1055,7 @@ footer
     width: 100%;
     height: 100%;
     position: relative;
-    background: #252525;
+    background: var(--footer-bg-color);
 }
 
 footer .conected-side
@@ -1048,7 +1072,7 @@ footer .conected-side
 
 .conected-side h6 span
 {
-    color: #0d8c60;
+    color: var(--footer-title-color);
 }
 
 .conected-side a
@@ -1123,7 +1147,7 @@ footer .conected-side
  .Advertising
  {
      color: #fff;
-     border: 1px solid #0d8c60;
+     border: 1px solid var(--min-text-color);
      border-radius: 5px;
  }
 
@@ -1131,7 +1155,7 @@ footer .conected-side
  {
      width: 100%;
      padding: 5px 0;
-     background: #0d8c60;
+     background: var(--min-text-color);
      text-align: center;
  }
  .header-advertising-card i
@@ -1156,13 +1180,15 @@ footer .conected-side
 
  .body-card-advertising .btn-advertising a
  {
-     color: #0d8c60;
+     color: var(--min-bg-color);
  }
  .Advertising .footer-advertising
  {
      width: 100%;
-     background: #0d8c60;
+     background: var(--min-text-color);
      text-align: center;
+     border-bottom-left-radius: 3px;
+     border-bottom-right-radius: 3px;
  }
 
  .body-card-advertising .footer-advertising i
@@ -1202,6 +1228,7 @@ footer .conected-side
     border-radius: 5px;
  }
 
+
  .volunter-row ul
  {
      color: #dddddd;
@@ -1225,7 +1252,7 @@ footer .conected-side
      position: absolute;
      width: 30px;
      height: 30px;
-     background: #0d8c60;
+     background: #b92025;
      font-size: 20px;
      line-height: 30px;
      border-radius: 50%;

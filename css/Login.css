@@ -153,6 +153,7 @@ label a:hover
     overflow: hidden;
     font-family: sans-serif;
 }
+/*
 ul li
 {
     position: absolute;
@@ -248,5 +249,5 @@ ul li
         bottom: 90vh;
         border-radius: 50%;
     }
-}
+}*/
 /* End Animation Background*/

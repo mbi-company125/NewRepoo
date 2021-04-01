@@ -15,7 +15,7 @@ section
 .title
 {
     width: 100%;
-    border-right: 5px solid #0d8c60;
+    border-right: 5px solid #b92025;
     margin-bottom: 30px;
 }
 
@@ -30,7 +30,7 @@ section
     content: '';
     width: 10px;
     height: 10px;
-    background: #0d8c60;
+    background: #b92025;
     display: block;
     position: absolute;
     transform: rotate(45deg);
@@ -39,7 +39,7 @@ section
 }
 .title h4 span
 {
-    color: #0d8c60;
+    color: #b92025;
 }
 
 .lead
@@ -49,7 +49,7 @@ section
 
 .sub-title h6
 {
-    color: #0d8c60;
+    color: #b92025;
     font-size: 25px;
 }
 
