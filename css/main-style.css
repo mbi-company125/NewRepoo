@@ -15,7 +15,7 @@
 
 ::-webkit-scrollbar-thumb
 {
-    background: #0d8c60;
+    background: var(--min-bg-color);
     border-radius: 10px;
 }
 
@@ -30,6 +30,13 @@
     --header-text-color: #008884;
     --footer-bg-color: #252525;
     --footer-title-color: #0d8c60;
+    --min-form-color: #fff;
+    --facebook-bg-color: #337ab7;
+    --whatsapp-bg-color: #006b00;
+    --youtube-bg-color: #e21414;
+    --google-bg-color: #b92025;
+    --footer-hover-color: #ffffff;
+    --footer-min-color: #c5c5c5c5;
     --light: #fdffff;
     --white: #ffffff;
     --gray: #c5c5c5;
@@ -417,6 +424,78 @@ a.btn-scroll:hover
     transition: all .5s ease;
 }
 
+/******* Start Our statistice box Section ******/
+.statistice-box
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--min-bg-color);
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.statistice-box::before
+{
+    position: absolute;
+    content: '';
+    background: var(--min-bg-color);
+    width: 100%;
+    height: 5%;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    background-size: cover;
+    border-radius: 5px;
+    transition: all .25s ease;
+    transition-delay: 0.1s;
+    z-index: -1;
+}
+
+.statistice-box:hover::before
+{
+    height: 100%;
+    transition: all .5s ease;
+}
+.statistice-box .icon-box
+{
+    width: 100px;
+    height: 100px;
+    background-color: var(--min-bg-color);
+    border-radius: 50%;
+    position: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 10000;
+}
+
+.statistice-box .icon-box i
+{
+    color: #fff;
+    font-size: 50px;
+    line-height: 100px;
+    z-index: 10000;
+}
+
+.statistice-box .num-box
+{
+    color: var(--min-text-color);
+    padding: 10px;
+    z-index: 10000;
+}
+
+.statistice-box .title-box
+{
+    color: var(--min-text-color);
+    font-size: 22px;
+    z-index: 10000;
+}
+
+
 /*** Start Our About Organization Section ***/
 section
 {
@@ -484,6 +563,55 @@ section
         margin-right: 10px;
     }
 }
+
+/** Start Our Policy Section **/
+.policy-col
+{
+    display: flex;
+}
+
+.policy-num
+{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--min-bg-color);
+    border-radius: 50%;
+}
+
+.number2
+{
+    background-color: var(--min-text-color);
+}
+
+.number3
+{
+    background-color: var(--header-text-color);
+}
+
+.number4
+{
+    background-color: var(--footer-bg-color);
+}
+.policy-num p
+{
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.policy-sub-title
+{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.policy-body
+{
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
 /**** About Service Section ****/
 .card
 {
@@ -519,7 +647,7 @@ section
     background: #dddddd;
 }
 
-.modal-footer .btn
+.modal-footer .btn, .modal-footer .more
 {
    margin: 0 auto;
    padding: 7px 13px;
@@ -609,7 +737,7 @@ section
 .page-item a
 {
     background: var(--min-bg-color);
-    color: #ffffff !important;
+    color: var(--min-form-color) !important;
     border-radius: 5px !important;
 }
 .page-item a:hover
@@ -669,6 +797,52 @@ section
     transition: all .5s ease;
 }
 
+/** start Our Clints Section **/
+.img-clint
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+}
+
+.overly-hover::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    transition-delay: 0.3s;
+    transition: all .5s ease;
+    border-radius: 10px;
+}
+
+.overly-hover:hover::before
+{
+    background: rgba(0,0,0,0.5);
+}
+
+.overly-hover p
+{
+    position: absolute;
+    color: var(--light);
+    font-size: 50px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+.overly-hover p:hover
+{
+    color: var(--min-text-color);
+    transition: all .5s ease;
+}
 
 /** Start Our Video File Section **/
 .file-card
@@ -887,12 +1061,107 @@ section
     color: var(--min-bg-color);
 }
 
+
+/** Start Our Site Section **/
+.site-box
+{
+    width: 100%;
+    height: 100%;
+}
+
+.header-site-box
+{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+.header-box
+{
+    width: 98%;
+    padding: 5px 0;
+    background: lightgray;
+    display: flex;
+    margin: 1%;
+    color: var(--footer-bg-color);
+    border-radius: 5px;
+}
+
+.header-box i
+{
+    margin: 5px;
+    font-size: 18px;
+}
+
+.header-box p
+{
+    font-size: 18px;
+}
+
+.site-box .dropdown .btn-secondary
+{
+    width: 98%;
+    margin: 1%;
+    background: inherit;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.site-box .dropdown .dropdown-toggle
+{
+    line-height: 20px;
+}
+
+.site-box .dropdown .btn-secondary p
+{
+    text-align: right;
+
+}
+
+.site-box .dropdown .btn-secondary:hover
+{
+    background: none;
+}
+
+.site-box .dropdown .dropdown-menu
+{
+    width: 98%;
+    margin: 1%;
+}
+ 
+.body-site
+{
+    width: 100%;
+    height: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.body-site ul
+{
+    margin: 10px;
+    width: 100%;
+}
+
+.body-site ul li a
+{
+    color: #333;
+}
+
+.body-site ul li a i
+{
+    margin-left: 10px;
+}
 /** Start Our Contact Us **/
 #Contact
 {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/undraw_Map_dark_re_36sy.svg);
+    margin: 70px 0 70px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -902,9 +1171,78 @@ form
     width: 100%;
 }
 
+.form-bg
+{
+    background: var(--min-bg-color);
+}
+
+.box
+{
+    position: relative;
+    width: 350px;
+    height: 100%;
+    border: 1px solid var(--min-form-color);
+    border-radius: 5px;
+    margin: 100px auto;
+}
+
+.box h3
+{
+    color: var(--min-form-color);
+    text-align: center;
+    margin: 10px;
+}
+
+.box label
+{
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.box label a
+{
+    color: var(--footer-bg-color);
+}
+
+.box .back-home i
+{
+    width: 20px;
+    height: 20px;
+    color: var(--min-form-color);
+}
+
+.box .back-home
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: 2px;
+    border-bottom: 1px solid var(--min-form-color);
+    border-right: 1px solid var(--min-form-color);
+    border-radius: 5px;
+}
+
+.box .icons-user i
+{
+    font-size: 50px;
+    margin-left: 10px;
+    color: var(--min-form-color);
+}
+
+.box .icons-user
+{
+    width: 70px;
+    height: 70px;
+    margin: 10px auto;
+    border: 1px solid var(--min-form-color);
+    border-radius: 50%;
+    padding: 5px;
+}
 form input[type="text"], 
 input[type="tel"], 
-input[type="email"]
+input[type="email"],
+input[type="password"]
 {
     width: 98%;
     padding: 6px 0;
@@ -912,24 +1250,26 @@ input[type="email"]
     outline: none;
     padding-right: 10px;
     border-radius: 5px;
-    border: 1px solid #fff;
+    border: 1px solid var(--min-form-color) !important;
     background: no-repeat;
-    color: #fff;
+    color: var(--min-form-color);
 }
 
 form input[type="text"]::placeholder,
  input[type="tel"]::placeholder,
- input[type="email"]::placeholder
+ input[type="email"]::placeholder,
+ input[type="password"]::placeholder
 {
-    color: #fff;
+    color: var(--min-form-color) !important;
 }
 
 form input[type="text"]:focus,
  input[type="tel"]:focus,
- input[type="email"]:focus
+ input[type="email"]:focus,
+ input[type="password"]:focus
 {
-    box-shadow: 1px 1px 4px #fff,
-                -1px -1px 4px #fff;
+    box-shadow: 1px 1px 4px var(--min-form-color),
+                -1px -1px 4px var(--min-form-color) !important;
     transition: all .5s ease;
 }
 form textarea
@@ -937,15 +1277,15 @@ form textarea
     width: 98%;
     margin: 1%;
     background: none;
-    border: 1px solid #fff;
+    border: 1px solid var(--min-form-color) !important;
     border-radius: 5px;
     outline: none;
-    color: #fff;
+    color: var(--min-form-color);
 }
 
 form textarea::placeholder
 {
-    color: #fff;
+    color: var(--min-form-color);
 }
 
 form textarea:placeholder-shown
@@ -955,24 +1295,25 @@ form textarea:placeholder-shown
 
 form textarea:focus
 {
-    box-shadow: 1px 1px 4px #fff,
-    -1px -1px 4px #fff;
+    box-shadow: 1px 1px 4px var(--min-form-color),
+    -1px -1px 4px var(--min-form-color);
     transition: all .5s ease;
 }
 
-form input[type="submit"], button[type="submit"]
+form input[type="submit"], 
+button[type="submit"]
 {
     padding: 5px 15px;
     border: none;
     background: var(--min-text-color);
-    color: #ffffff;
+    color: var(--min-form-color);
     outline: none;
     border-radius: 3px;
     margin: 10px;
 }
 form button[type="submit"] a
 {
-    color: #fff;
+    color: var(--min-form-color);
 }
 form input[type="submit"]:hover
 {
@@ -980,7 +1321,8 @@ form input[type="submit"]:hover
     transition: all .5s ease;
 }
 
-/** **/
+
+/** location-side **/
 .location-side
 {
     float: right;
@@ -989,12 +1331,14 @@ form input[type="submit"]:hover
 
 .location-side .location
 {
-    color: #fff;
+    color: var(--min-form-color);
+
+    position: relative;
 }
 form .location a
 {
     position: relative;
-    color: #fff;
+    color: var(--min-form-color);
     margin-bottom: 20px;
 }
 
@@ -1006,7 +1350,13 @@ form .location a:hover
 form .location i
 {
     margin-left: 10px;
-    color: var(--min-bg-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--min-bg-color);
+    color: var(--min-form-color);
+    line-height: 40px;
+    text-align: center;
 }
 
 form .social i
@@ -1027,25 +1377,25 @@ form .social i:hover
 
 form .social .fa-facebook:hover
 {
-    background: #337ab7;
+    background: var(--facebook-bg-color);
     transition: all .5s ease;
 }
 
 form .social .fa-whatsapp:hover
 {
-    background: #006b00;
+    background: var(--whatsapp-bg-color);
     transition: all .5s ease;
 }
 
 form .social .fa-youtube:hover
 {
-    background: #e21414;
+    background: var(--youtube-bg-color);
     transition: all .5s ease;
 }
 
 form .social .fa-google:hover
 {
-    background: #b92025;
+    background: var(--google-bg-color);
     transition: all .5s ease;
 }
 
@@ -1060,8 +1410,7 @@ footer
 
 footer .conected-side
 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .conected-side h6
@@ -1077,11 +1426,11 @@ footer .conected-side
 
 .conected-side a
 {
-    color: #c5c5c5;
+    color: var(--footer-min-color);
 }
  .conected-side a:hover
  {
-     color: #ffffff;
+     color: var(--footer-hover-color);
      transition: all .5s ease;
  }
 
@@ -1093,26 +1442,30 @@ footer .conected-side
  /*** Start Our Cards Section ***/
  #Cards
  {
-     width: 100%;
-     height: 150vh;
-     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/undraw_online_cv_qy9w.svg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 70px 0 70px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(../img/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
  }
 
  .card-request h3
  {
-     color: #fff;
+     color: var(--min-form-color);
      margin: 10px 0 30px;
  }
 
  .card-request label, #form-volunteer label
  {
      display: flex;
-     color: #fff;
+     flex-wrap: wrap;
+     justify-content: center;
+     color: var(--min-form-color);
      margin: 10px 0;
-     border: 1px solid #fff;
+     border: 1px solid var(--min-form-color);
      border-radius: 5px;
      width: 98%;
      margin: 1%;
@@ -1120,7 +1473,7 @@ footer .conected-side
 
  .card-request label h6, #form-volunteer label h6
  {
-     color: #fff;
+     color: var(--min-form-color);
      margin: 10px 20px 30px;
  }
  form input[type="radio"], form input[type="checkbox"]
@@ -1133,21 +1486,21 @@ footer .conected-side
      width: 98%;
      margin: 1%;
      background: none;
-     border: 1px solid #fff;
+     border: 1px solid var(--min-form-color);
      border-radius: 5px;
      padding: 7px 13px;
-     color: #fff;
+     color: var(--min-form-color);
      outline: none;
  }
- .card-request label li, #form-volunteer label li
+ .card-request label p, #form-volunteer label p
  {
      margin: 40px 5px;
  }
 
  .Advertising
  {
-     color: #fff;
-     border: 1px solid var(--min-text-color);
+     color: var(--min-form-color);
+     border: 1px solid var(--min-bg-color);
      border-radius: 5px;
  }
 
@@ -1155,12 +1508,12 @@ footer .conected-side
  {
      width: 100%;
      padding: 5px 0;
-     background: var(--min-text-color);
+     background: var(--min-bg-color);
      text-align: center;
  }
  .header-advertising-card i
  {
-     color: #fff;
+     color: var(--min-form-color);
      font-size: 30px;
  }
 
@@ -1185,7 +1538,7 @@ footer .conected-side
  .Advertising .footer-advertising
  {
      width: 100%;
-     background: var(--min-text-color);
+     background: var(--min-bg-color);
      text-align: center;
      border-bottom-left-radius: 3px;
      border-bottom-right-radius: 3px;
@@ -1193,72 +1546,93 @@ footer .conected-side
 
  .body-card-advertising .footer-advertising i
  {
-     color: #fff;
+     color: var(--min-form-color);
  }
 
  /*** start Our volunteer Section ***/
- #volunteer
+#volunteer
+{
+    background-color: #ffffff;
+}
+ #form-volunter
  {
      width: 100%;
-     height: 170vh;
-     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../img/undraw_completed_steps_yurw.svg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     overflow: hidden;
+     height: 100%;
+     position: relative;
  }
 
- #volunteer-2
+ #form-volunter h3 span
  {
-     width: 100%;
-     height: 150vh;
-     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../img/undraw_Completed_re_cisp.svg);
-     background-size: cover;
-     background-repeat: no-repeat;
-     overflow: hidden;
- }
-
- .volunter-row
- {
-    width: 100%;
-    position: relative;
-    display: flex;  
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
- }
-
-
- .volunter-row ul
- {
-     color: #dddddd;
-     margin: 0 10px 30px;
- }
-
- .volunter-row ul li
- {
-    padding: 0;
- }
-
- form small
- {
-     width: 100%;
-     display: flex;
-     color: #dddddd;
-     margin: 20px 0;
- }
- #form-volunteer h3 span
- {
-     position: absolute;
-     width: 30px;
-     height: 30px;
-     background: #b92025;
-     font-size: 20px;
-     line-height: 30px;
+     width: 25px;
+     height: 25px;
+     background: var(--min-text-color);
+     color: var(--min-form-color);
      border-radius: 50%;
+     position: absolute;
+     font-size: 18px;
      text-align: center;
-     margin: 5px;
-     right: -20px;
+     margin-right: -30px;
+ }
+
+ #form-volunter h3::first-letter
+ {
+     color: var(--min-text-color);
+ }
+
+ #form-volunter input[type="text"], input[type="tel"], input[type="email"]
+ {
+     width: 98%;
+     margin: 1%;
+     padding: 7px 0;
+     border: 1px solid var(--min-bg-color);
+     border-radius: 5px;
+     color: var(--min-bg-color);
+ }
+ #form-volunter input[type="text"]:focus,
+  input[type="tel"]:focus,
+  input[type="email"]:focus
+  {
+ box-shadow: 1px 1px 4px var(--min-bg-color),
+    -1px -1px 4px var(--min-bg-color);
+    transition: all .5s ease;
+  }
+ #form-volunter input[type="text"]::placeholder, 
+  input[type="tel"]::placeholder, input[type="email"]::placeholder
+ {
+     color: var(--min-bg-color);
+ }
+ #form-volunter input[type="text"]:placeholder-shown,
+  input[type="tel"]:placeholder-shown, input[type="email"]:placeholder-shown
+ {
+     padding-right: 5px;
+     color: var(--min-bg-color);
+ }
+ #form-volunter input[type="date"]
+ {
+     border: 1px solid var(--min-bg-color);
+     border-radius: 5px;
+     color: var(--min-bg-color);
+ }
+ #form-volunter ol
+ {
+     width: 98%;
+     margin: 1%;
+     border: 1px solid var(--min-bg-color);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     border-radius: 5px;
+ }
+
+ #form-volunter ol li
+{
+    display: flex;
+}
+
+ .volunter-img-box img
+ {
+     width: 100%;
+     height: 100%;
  }
  /** Copyright & Created **/
  .Copyright

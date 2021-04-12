@@ -16,6 +16,8 @@
    <link rel="stylesheet" href="./css/main-style.css">
     <!-- My Style css Local -->
     <link rel="stylesheet" href="./css/policy.css">
+    <!-- Loader animation -->
+    <link rel="stylesheet" href="./css/LoadingAni.css">
     <title>البطاقة التعاونية</title>
 </head>
 <body onload="myFunction()">
@@ -133,21 +135,21 @@
                         <input type="text" name="name" id="name" placeholder="الأسم رباعي" required>
                         <input type="tel" name="name" id="name" placeholder="رقم الهاتف" required>
                         <input type="text" name="name" id="name" placeholder="السكن" required>
-                        <li style="color: #fff; margin-right: 10px;" class="text-right">تاريخ الميلاد</li>
+                        <p style="color: #fff; margin-right: 10px;" class="text-right">تاريخ الميلاد</p>
                         <input type="date" name="name" id="name" placeholder="تاريخ الميلاد" required>
                         <input type="text" name="name" id="name" placeholder="مكان الميلاد" required>
                         <input type="text" name="name" id="name" placeholder="فصيلة الدم" required>
                         <label>
                             <h6>نوع إثبات الشخصية</h6>
-                        <input type="radio" name="radio" id="radio" required><li>بطاقة قومية</li>
-                        <input type="radio" name="radio" id="radio" required><li>جواز سفر</li>
-                        <input type="radio" name="radio" id="radio" required><li>رقم وطني</li>
+                        <input type="radio" name="radio" id="radio" required><p>بطاقة قومية</p>
+                        <input type="radio" name="radio" id="radio" required><p>جواز سفر</p>
+                        <input type="radio" name="radio" id="radio" required><p>رقم وطني</p>
                     </label>
                     <input type="tel" name="name" id="name" placeholder="رقم إثبات الشخصية" required>
                     <label>
                         <h6>تحديد النوع</h6>
-                    <input type="radio" name="radio" id="radio" required><li>ذكر</li>
-                    <input type="radio" name="radio" id="radio" required><li>أنثي</li>
+                    <input type="radio" name="radio" id="radio" required><p>ذكر</p>
+                    <input type="radio" name="radio" id="radio" required><p>أنثي</p>
                 </label>
                 <input type="submit" value="إرسال" name="submit" onclick="validate()">
                     </form>
